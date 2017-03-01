@@ -1,0 +1,31 @@
+﻿
+<h2>News</h2>
+
+<div class="row">
+    @*@foreach (SpNubip.Models.News b in Model)
+    {
+        @Html.ActionLink("PageWithNew", "Home", new { id = @b.ID_News })
+        <div class="example">
+            <img src="@b.Img" class="example_beauty" />
+            <div class="example_text">
+                <h6>@b.Title</h6>
+                <span>@b.NewText</span>
+                @b.ID_News
+            </div>
+        </div>
+            
+    }*@
+    @foreach (SpNubip.Models.News b in Model)
+    {
+        <a href="/Home/PageWithNew/@b.ID_News">
+            <div class="example">
+                <img src="@b.Img" class="example_beauty" />
+                <div class="example_text">
+                    <h6>@b.Title</h6>
+                    <span>@b.NewText</span>
+                </div>
+            </div>
+        </a>
+    }
+  
+</div>

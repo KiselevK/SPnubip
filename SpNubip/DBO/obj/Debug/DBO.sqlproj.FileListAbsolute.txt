@@ -1,0 +1,9 @@
+E:\SpNubip\DBO\bin\Debug\DBO.dacpac
+E:\SpNubip\DBO\bin\Debug\DBO.dll
+E:\SpNubip\DBO\bin\Debug\DBO.pdb
+E:\SpNubip\DBO\obj\Debug\Model.xml
+E:\SpNubip\DBO\obj\Debug\refactor.xml
+E:\SpNubip\DBO\obj\Debug\postdeploy.sql
+E:\SpNubip\DBO\obj\Debug\predeploy.sql
+E:\SpNubip\DBO\obj\Debug\DBO.dll
+E:\SpNubip\DBO\obj\Debug\DBO.pdb

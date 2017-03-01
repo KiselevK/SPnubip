@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>What is sciense park?</h1>
+    <img style="width:100%; height:200px" src="http://nubip.edu.ua/sites/default/files/1%20veresnya.jpg" /><br />
+    <p class="lead">
+        University research park, science park, or science and technology park is an area managed in a manner designed to promote innovation.
+        It is a physical place that supports university-industry and government collaboration with the intent of creating high technology economic development
+        qand advancing knowledge.
+    </p>
+    
+    <p class="lead">
+        There are many approximate synonyms for "university research park", science park, (science or) technology park, technopolis and biopark.
+    </p>  
+    <p class="lead">
+        The appropriate term typically depends on the type of affiliation the parks has with an institution of higher learning and research and also perhaps
+        the sort of science and research in which the park's entities engage.
+
+        </p>
+    <p class="lead">
+        These parks differ from typical high-technology business districts in that university research parks and science and tech parks are more organized,
+        planned, and managed. They differ from science centres in that they are a place where research is commercialized. Typically, businesses and organizations
+        in the parks focus on product advancement and innovation as opposed to industrial parks that focus on manufacturing and business parks that focus on
+        administration.
+    </p> 
+    <p class="lead">
+        The parks offer a number of shared resources, such as incubators, programs and collaboration activities, uninterruptible power supply, telecommunications hubs,
+        reception and security, management offices, restaurants, bank offices, convention center, parking, internal transportation, entertainment and sports facilities, etc.
+        In this way, the park offers considerable advantages to hosted companies.
+    </p> 
+    <p class="lead">
+        Science and technology parks are supported by universities in order to bring in industry with which they can collaborate and by local government
+        in order to improve the prosperity of the community. Incentives to attract companies to the area are often offered as part of the entire package.
+    </p>
+<p><a href="https://en.wikipedia.org/wiki/Science_park" class="btn btn-primary btn-lg">Look on WikipediA &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Sharing of ideas</h2>
+        <p>
+            In Europe, Pierre Laffitte, the mastermind and founder of Sophia Antipolis Science Park in France,
+            described the concept of cross fertilization as the interchange between different cultures or 
+            different ways of thinking that is mutually productive and beneficial; "the cross-fertilization
+            of science and the creative arts" not only in terms of economic, but also on a social and cultural level. 
+         </p>
+        <p><a class="btn btn-default" href="http://google.com/">Any link &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>News</h2>
+
+        @foreach (SpNubip.Models.News b in Model)
+            {
+            <h4> <a class="list-group" href="/Home/PageWithNew/@b.ID_News"><p>@b.Title</p></a></h4>
+        }
+    </div>
+
+    <div class="col-md-4">
+        <h2>Contact</h2>
+        <p>Heroyiv Oborony st., 15, Kyiv - 03041, Ukraine</p>
+        <p><a class="btn btn-default" href="/Home/Contact">About us &raquo;</a></p>
+</div>
+ 
+</div>

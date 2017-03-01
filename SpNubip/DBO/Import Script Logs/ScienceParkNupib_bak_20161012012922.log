@@ -1,0 +1,10 @@
+10/12/2016 4:29:22 PM	This log contains information about the import operation of the script 'ScienceParkNupib.bak' into project 'DBO' on computer '1-PC' by user'1.
+10/12/2016 4:29:22 PM	Started importing file: E:\ScienceParkNupib.bak 
+10/12/2016 4:29:22 PM	File name E:\ScienceParkNupib.bak (size: 2775552)
+10/12/2016 4:29:22 PM	Parsing import script
+10/12/2016 4:29:23 PM	Total number of batches in script: 1
+10/12/2016 4:29:23 PM	Total number of statements in script: 0
+10/12/2016 4:29:23 PM	The script was successfully imported into the project.
+10/12/2016 4:29:27 PM	In the script that you provided to the import operation, one or more statements were not fully understood. These statements were moved to the ScriptsIgnoredOnImport.sql file. Review the file contents for additional information.
+10/12/2016 4:29:27 PM	A summary of the import was saved to the following location: E:\SpNubip\DBO\Import Script Logs\ScienceParkNupib_bak_20161012012922.log
+10/12/2016 4:29:27 PM	Click Finish to continue...

@@ -1,0 +1,89 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+
+}
+
+
+.example {
+    display:inline-block;   
+    position:relative;
+  margin-top:15px;
+  margin-left:10px;
+}
+    
+
+.example .example_beauty {
+    width:350px;
+    height:300px;
+    text-overflow: ellipsis;
+ white-space: nowrap;
+    }
+    
+.example .example_text {
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+    color:white;
+
+    overflow-wrap: break-word;
+
+      overflow:hidden;
+ 
+     white-space: nowrap;
+    
+    text-overflow: ellipsis;
+    padding:10px;
+    background-color:rgba(0,0,0,.3);
+ 
+     
+}
+
+.example .example_text:hover
+{
+   
+    overflow:hidden;
+    color:aqua;
+    text-overflow: ellipsis;
+      white-space: nowrap;
+      text-decoration: none; 
+      
+    overflow-wrap: break-word;
+}
+
+.example h6 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+     
+      white-space: normal;
+}
+.example span {
+    font-size:12px; 
+}
+
