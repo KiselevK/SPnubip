@@ -252,6 +252,7 @@
     <Content Include="ClassDiagram1.cd" />
     <None Include="Properties\PublishProfiles\Kiselev.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\ForListing.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.11.3.min.js" />
@@ -312,6 +313,7 @@
     <Content Include="Views\Home\Info.cshtml" />
     <Content Include="Views\Home\Projects.cshtml" />
     <Content Include="Views\Home\PageWithProjects.cshtml" />
+    <Content Include="Views\Home\_IndexDisplay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
