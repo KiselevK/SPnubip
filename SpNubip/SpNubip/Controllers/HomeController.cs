@@ -11,21 +11,13 @@ namespace SpNubip.Controllers
     {
         BD db = new BD();
 
-        public ActionResult Index()
-        {
-            return View(db.News);
-        }
-
         public ActionResult News()
         {
 
             return View(db.News);
         }
 
-        public ActionResult Listing()
-        {
-            return View(db.News);
-        }
+        
 
         public ActionResult Contact()
         {
@@ -103,7 +95,38 @@ namespace SpNubip.Controllers
             return HttpNotFound();
         }
 
+        //for index layout
+        public ActionResult Listing()
+        {
+            return View(db.News);
+        }
 
+        public ActionResult Mission()
+        {
+            return View();
+        }
+
+        public ActionResult Presentation()
+        {
+            return View();
+        }
+        public ActionResult Strategy_plan()
+        {
+            return View();
+        }
+        public ActionResult Diagram1()
+        {
+            return View();
+        }
+        public ActionResult Diagram2()
+        {
+            return View();
+        }
+
+        public ActionResult Potential()
+        {
+            return View();
+        }
 
 
         //get data from database by id

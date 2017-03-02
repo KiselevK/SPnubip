@@ -226,22 +226,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="img\002.jpg" />
-    <Content Include="img\003.jpg" />
-    <Content Include="img\004.jpg" />
-    <Content Include="img\005.jpg" />
-    <Content Include="img\006.jpg" />
     <Content Include="img\a02.png" />
-    <Content Include="img\Diagram for sp.png" />
     <Content Include="img\loading.gif" />
     <Content Include="img\nubip_bottom_logo_ua.png" />
-    <Content Include="img\thumb-002.jpg" />
-    <Content Include="img\thumb-003.jpg" />
-    <Content Include="img\thumb-004.jpg" />
-    <Content Include="img\thumb-005.jpg" />
-    <Content Include="img\thumb-006.jpg" />
     <Content Include="img\Untitled-1.png" />
+    <Content Include="img\Організаційна структура.PNG" />
     <Content Include="img\Стартегічний план розвитку НП.doc - Google Документи - Google Chrome 2016-11-29 19.46.24.png" />
+    <Content Include="img\Схема взаємодії.PNG" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -314,6 +305,12 @@
     <Content Include="Views\Home\PageWithProjects.cshtml" />
     <Content Include="Views\Home\_IndexLayout.cshtml" />
     <Content Include="Views\Home\Listing.cshtml" />
+    <Content Include="Views\Home\Mission.cshtml" />
+    <Content Include="Views\Home\Presentation.cshtml" />
+    <Content Include="Views\Home\Strategy_plan.cshtml" />
+    <Content Include="Views\Home\Diagram1.cshtml" />
+    <Content Include="Views\Home\Diagram2.cshtml" />
+    <Content Include="Views\Home\Potential.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

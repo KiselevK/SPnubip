@@ -1,0 +1,13 @@
+﻿<h2>Partners</h2>
+@foreach (SpNubip.Models.Partner a in Model)
+{
+    <a href="/Home/PageWithPartners/@a.Id_Partners">
+        <div class="example">
+            <img src="@a.Img_Partners" class="example_beauty" />
+            <div class="example_text">
+                <h6>@a.Name_Partners</h6>
+                <span>@a.Type_Partners</span>
+            </div>
+        </div>
+    </a>
+}
