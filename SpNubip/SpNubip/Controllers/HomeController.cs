@@ -22,6 +22,11 @@ namespace SpNubip.Controllers
             return View(db.News);
         }
 
+        public ActionResult Listing()
+        {
+            return View(db.News);
+        }
+
         public ActionResult Contact()
         {
             return View(db.News);
