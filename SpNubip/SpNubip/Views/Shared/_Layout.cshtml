@@ -18,7 +18,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="@Url.Action("Index", "Home", new { area = "", @class = "navbar-brand" })">
+                <a href="@Url.Action("Listing", "Home", new { area = "", @class = "navbar-brand" })">
                     <img src="~/img/nubip_bottom_logo_ua.png" />
                 </a>
               
@@ -42,14 +42,19 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now - Nubip </p>
-        </footer>
-    </div>
-
+<div class="" style="background-color: #dad35d">
+<div class="container body-content">
+    @RenderBody()
+  </div>
+</div>
+        
+   
+<footer style="background-color: #3d5377; height: 300px">
+   <hr style="background-color: #"/>
+    <p>&copy; @DateTime.Now - Nubip </p>
+</footer>
+  
+    @*#153c7e*@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
