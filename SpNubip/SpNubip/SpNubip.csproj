@@ -222,11 +222,21 @@
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\pe-icon-social\css\helper.css" />
+    <Content Include="Content\pe-icon-social\css\pe-icon-social.css" />
+    <Content Include="Content\pe-icon-social\css\social-style-ls.css" />
+    <Content Include="Content\pe-icon-social\css\social-style-ls.min.css" />
+    <Content Include="Content\pe-icon-social\css\social-style.css" />
+    <Content Include="Content\pe-icon-social\css\social-style.min.css" />
+    <Content Include="Content\pe-icon-social\fonts\pe-icon-social.svg" />
+    <Content Include="Content\pgwslider.css" />
+    <Content Include="Content\pgwslider.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="img\a02.png" />
+    <Content Include="img\a17.png" />
     <Content Include="img\loading.gif" />
     <Content Include="img\nubip_bottom_logo_ua.png" />
     <Content Include="img\Untitled-1.png" />
@@ -241,9 +251,24 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ClassDiagram1.cd" />
+    <Content Include="Content\pe-icon-social\.sass-cache\a02140f8c90269fd1a144c8275c4a3432c30379b\social-style-demo.scssc" />
+    <Content Include="Content\pe-icon-social\.sass-cache\a02140f8c90269fd1a144c8275c4a3432c30379b\social-style-ls.min.scssc" />
+    <Content Include="Content\pe-icon-social\.sass-cache\a02140f8c90269fd1a144c8275c4a3432c30379b\social-style-ls.scssc" />
+    <Content Include="Content\pe-icon-social\.sass-cache\a02140f8c90269fd1a144c8275c4a3432c30379b\social-style.min.scssc" />
+    <Content Include="Content\pe-icon-social\.sass-cache\a02140f8c90269fd1a144c8275c4a3432c30379b\social-style.scssc" />
+    <Content Include="Content\pe-icon-social\.sass-cache\a02140f8c90269fd1a144c8275c4a3432c30379b\style.scssc" />
+    <Content Include="Content\pe-icon-social\.sass-cache\a02140f8c90269fd1a144c8275c4a3432c30379b\_mixins.scssc" />
+    <Content Include="Content\pe-icon-social\.sass-cache\a02140f8c90269fd1a144c8275c4a3432c30379b\_variables.scssc" />
+    <Content Include="Content\pe-icon-social\fonts\pe-icon-social.eot" />
+    <Content Include="Content\pe-icon-social\fonts\pe-icon-social.ttf" />
+    <Content Include="Content\pe-icon-social\fonts\pe-icon-social.woff" />
+    <Content Include="Content\pe-icon-social\scss\social-style-ls.scss" />
+    <Content Include="Content\pe-icon-social\scss\social-style.scss" />
+    <Content Include="Content\pe-icon-social\scss\_mixins.scss" />
+    <Content Include="Content\pe-icon-social\scss\_variables.scss" />
     <None Include="Properties\PublishProfiles\Kiselev.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\ForListing.js" />
+    <Content Include="Scripts\ForSlider.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.11.3.min.js" />
@@ -258,10 +283,14 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\jssor.slider-22.0.6.mini.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\pgwslider.js" />
+    <Content Include="Scripts\pgwslider.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -304,13 +333,14 @@
     <Content Include="Views\Home\Projects.cshtml" />
     <Content Include="Views\Home\PageWithProjects.cshtml" />
     <Content Include="Views\Home\_IndexLayout.cshtml" />
-    <Content Include="Views\Home\Listing.cshtml" />
+    <Content Include="Views\Home\Slider.cshtml" />
     <Content Include="Views\Home\Mission.cshtml" />
     <Content Include="Views\Home\Presentation.cshtml" />
     <Content Include="Views\Home\Strategy_plan.cshtml" />
     <Content Include="Views\Home\Diagram1.cshtml" />
     <Content Include="Views\Home\Diagram2.cshtml" />
     <Content Include="Views\Home\Potential.cshtml" />
+    <Content Include="Views\Admin\DeveloperLinks.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

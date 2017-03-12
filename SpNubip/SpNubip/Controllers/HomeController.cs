@@ -96,7 +96,7 @@ namespace SpNubip.Controllers
         }
 
         //for index layout
-        public ActionResult Listing()
+        public ActionResult Slider()
         {
             return View(db.News);
         }
