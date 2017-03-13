@@ -16,7 +16,7 @@ namespace SpNubip
             routes.MapRoute(
                 "Home",
                 "",
-                new { controller = "Home", action = "Listing", id = "" }
+                new { controller = "Home", action = "Slider", id = "" }
             );
 
             routes.MapRoute(
