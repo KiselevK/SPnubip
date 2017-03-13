@@ -19,6 +19,12 @@ namespace SpNubip.Controllers
         {
             return View();
         }
-       
+
+        public ActionResult DeveloperLinks()
+        {
+            return View();
+        }
+
+
     }
 }

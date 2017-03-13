@@ -252,6 +252,20 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ClassDiagram1.cd" />
+<<<<<<< HEAD
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\Kiselev.pubxml" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\ForListing.js" />
+=======
     <Content Include="Content\pe-icon-social\.sass-cache\a02140f8c90269fd1a144c8275c4a3432c30379b\social-style-demo.scssc" />
     <Content Include="Content\pe-icon-social\.sass-cache\a02140f8c90269fd1a144c8275c4a3432c30379b\social-style-ls.min.scssc" />
     <Content Include="Content\pe-icon-social\.sass-cache\a02140f8c90269fd1a144c8275c4a3432c30379b\social-style-ls.scssc" />
@@ -268,10 +282,11 @@
     <Content Include="Content\pe-icon-social\scss\_mixins.scss" />
     <Content Include="Content\pe-icon-social\scss\_variables.scss" />
     <None Include="Properties\PublishProfiles\Kiselev.pubxml" />
-    <Content Include="Scripts\bootstrap.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ForSlider.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+>>>>>>> 98f0f59e7193e3f4ab5f1870bc011249e117a1ef
     <Content Include="Scripts\jquery-1.11.3.min.js" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -279,7 +294,6 @@
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
     <Content Include="Scripts\jquery.eislideshow.js.bak" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.easing.1.3.js" />
     <Content Include="Scripts\jquery.eislideshow.js" />
     <Content Include="Scripts\jquery.slidizle.js" />
@@ -289,9 +303,13 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\jssor.slider-22.0.6.mini.js" />
+<<<<<<< HEAD
     <Content Include="Scripts\modernizr-2.8.3.js" />
+=======
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\pgwslider.js" />
     <Content Include="Scripts\pgwslider.min.js" />
+>>>>>>> 98f0f59e7193e3f4ab5f1870bc011249e117a1ef
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
@@ -349,19 +367,19 @@
     <Content Include="Views\Home\Diagram1.cshtml" />
     <Content Include="Views\Home\Diagram2.cshtml" />
     <Content Include="Views\Home\Potential.cshtml" />
-    <Content Include="Views\Admin\DeveloperLinks.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+=======
+    <Content Include="Views\Admin\DeveloperLinks.cshtml" />
+>>>>>>> 98f0f59e7193e3f4ab5f1870bc011249e117a1ef
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
