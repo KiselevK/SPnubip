@@ -752,20 +752,11 @@ F:\my\SPnubip\SPnubip\SpNubip\bin\roslyn\VBCSCompiler.exe.config
 F:\my\SPnubip\SPnubip\SpNubip\bin\SpNubip.dll.config
 F:\my\SPnubip\SPnubip\SpNubip\bin\SpNubip.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\SpNubip.pdb
-F:\my\SPnubip\SPnubip\SpNubip\bin\Antlr3.Runtime.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\EntityFramework.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\EntityFramework.SqlServer.dll
-F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.AI.Agent.Intercept.dll
-F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.AI.DependencyCollector.dll
-F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.AI.PerfCounterCollector.dll
-F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.AI.ServerTelemetryChannel.dll
-F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.AI.Web.dll
-F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.AI.WindowsServer.dll
-F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.ApplicationInsights.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.AspNet.Identity.Core.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.AspNet.Identity.Owin.dll
-F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.Owin.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.Owin.Host.SystemWeb.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.Owin.Security.Cookies.dll
@@ -776,7 +767,6 @@ F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.Owin.Security.OAuth.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.Owin.Security.Twitter.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.Web.Infrastructure.dll
-F:\my\SPnubip\SPnubip\SpNubip\bin\Newtonsoft.Json.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\Owin.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\System.Web.Helpers.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\System.Web.Mvc.dll
@@ -785,7 +775,6 @@ F:\my\SPnubip\SPnubip\SpNubip\bin\System.Web.Razor.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\System.Web.WebPages.Deployment.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\System.Web.WebPages.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\System.Web.WebPages.Razor.dll
-F:\my\SPnubip\SPnubip\SpNubip\bin\WebGrease.dll
 F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.AI.DependencyCollector.xml
 F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.AI.ServerTelemetryChannel.xml
 F:\my\SPnubip\SPnubip\SpNubip\bin\Microsoft.AI.Web.xml
