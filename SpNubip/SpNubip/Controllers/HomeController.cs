@@ -9,7 +9,7 @@ namespace SpNubip.Controllers
 {
     public class HomeController : Controller
     {
-        BD db = new BD();
+        SpDBmodel db = new SpDBmodel();
 
         public ActionResult News()
         {
@@ -80,19 +80,21 @@ namespace SpNubip.Controllers
         }
 
         [HttpGet]
-        public ActionResult PageWithProjects(Guid id)
+        public ActionResult PageWithProjects()
 
         {
-            if (id == null)
-            {
-                return HttpNotFound();
-            }
-            var Projects = db.Projects.Find(id);
-            if (Projects != null)
-            {
-                return View(Projects);
-            }
-            return HttpNotFound();
+            //if (id == null)    Guid id
+            //{
+            //    return HttpNotFound();
+            //}
+            //var Projects = db.Projects.Find(id);
+            //if (Projects != null)
+            //{
+            //    return View(Projects);
+            //}
+            //return HttpNotFound();
+
+            return View();
         }
 
         //for index layout

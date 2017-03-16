@@ -16,7 +16,7 @@ namespace SpNubip.Models
 
         [Column("News")]
         [Required]
-        public string NewText { get; set; }
+        public string News1 { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime DateNews { get; set; }

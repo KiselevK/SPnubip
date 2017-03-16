@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harvest | Home</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<!-- pop-up-box -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.lightbox.css">
+	<script src="js/jquery.lightbox.js"></script>
+	<script>
+	  // Initiate Lightbox
+	  $(function() {
+		$('.product-gd1 a').lightbox(); 
+	  });
+	</script>
+<!-- //pop-up-box -->
+<!-- menu -->
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- //menu -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+	
+<body class="cbp-spmenu-push">
+<!-- header -->
+	<div class="header-top">
+		<div class="container">
+			<div class="header-top-left">
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
+			</div>
+			<div class="header-top-rigt">
+				<p>+9125 935 908</p>
+			</div>
+			<div class="header-top-right">
+				<p>Contact Us</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="header">
+		<div class="container">
+			<div class="top-nav">
+					<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
+						<h3>Menu</h3>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#about" class="scroll">About</a></li>
+							<li><a href="#products" class="scroll">Products</a></li>
+							<li><a href="#event" class="scroll">Events</a></li>
+							<li><a href="#mail" class="scroll">Mail Us</a></li>
+						</ul>
+					</nav>
+					<div class="main buttonset">	
+							<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+							<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+							<!--<span class="menu"></span>-->
+					</div>
+					<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+					<script src="js/classie.js"></script>
+					<script>
+					var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+					showRightPush = document.getElementById( 'showRightPush' ),
+					body = document.body;
+
+					showRightPush.onclick = function() {
+						classie.toggle( this, 'active' );
+						classie.toggle( body, 'cbp-spmenu-push-toleft' );
+						classie.toggle( menuRight, 'cbp-spmenu-open' );
+						disableOther( 'showRightPush' );
+					};
+
+					function disableOther( button ) {
+						if( button !== 'showRightPush' ) {
+							classie.toggle( showRightPush, 'disabled' );
+						}
+					}
+				 </script>
+			</div>
+			<div class="logo">
+				<a href="index.html"><i class="glyphicon glyphicon-grain" aria-hidden="true"></i>Harvest<span>To Raise Your Crops and Livestock!</span></a>
+			</div>
+			<div class="search">
+				<form>
+					<input type="text" value="Search here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search here...';}" required="">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- banner -->
+	<div class="banner">
+		<div class="container">
+		<!-- Slider-starts-Here -->
+			
+				<script src="js/responsiveslides.min.js"></script>
+				 <script>
+				    // You can also use "$(window).load(function() {"
+				    $(function () {
+				      // Slideshow 4
+				      $("#slider3").responsiveSlides({
+				        auto: true,
+				        pager: false,
+				        nav: true,
+				        speed: 500,
+				        namespace: "callbacks",
+				        before: function () {
+				          $('.events').append("<li>before event fired.</li>");
+				        },
+				        after: function () {
+				          $('.events').append("<li>after event fired.</li>");
+				        }
+				      });
+				
+				    });
+				  </script>
+			<!--//End-slider-script -->
+			<div  id="top" class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="banner-info">
+							<div class="banner-info-left">
+								<img src="images/2.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="banner-info-right">
+								<h1>cum soluta nobis est eligendi optio cumque nihil impedit 
+									quo minus id quod maxime placeat facere possimus</h1>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui 
+									blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+									et quas molestias excepturi sint occaecati cupiditate non.</p>
+								<div class="cont">
+									<a href="#mail" class="scroll">Contact Us</a>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="banner-info">
+							<div class="banner-info-left">
+								<img src="images/3.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="banner-info-right">
+								<h1>iusto soluta nobis est eligendi optio cumque nihil impedit 
+									quo minus id quod maxime placeat facere possimus</h1>
+								<p>Atque vero eos et accusamus et iusto odio dignissimos ducimus qui 
+									blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+									et quas molestias excepturi sint cupiditate.</p>
+								<div class="cont">
+									<a href="#mail" class="scroll">Contact Us</a>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="banner-info">
+							<div class="banner-info-left">
+								<img src="images/4.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="banner-info-right">
+								<h1>sin soluta nobis est eligendi optio cumque nihil impedit 
+									quo minus id quod maxime placeat facere possimus</h1>
+								<p>Et vero eos et accusamus et iusto odio dignissimos ducimus qui 
+									blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+									et quas molestias excepturi sint occaecati cupiditate.</p>
+								<div class="cont">
+									<a href="#mail" class="scroll">Contact Us</a>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- welcome -->
+	<div class="welcome">
+		<div class="container">
+			<div class="col-md-6 welcome-left">
+				<img src="images/5.png" alt=" " class="img-responsive" />
+			</div>
+			<div class="col-md-6 welcome-right">
+				<h3>A Brief <span>History</span></h3>
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+					consectetur, adipisci velit, sed quia non numquam eius modi tempora 
+					incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+				<div class="cont">
+					<a href="single.html">More</a>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //welcome -->
+<!-- about -->
+	<div class="about" id="about">
+		<div class="about-left">
+			<img src="images/1.jpg" alt=" " class="img-responsive" />
+		</div>
+		<div class="about-right">
+			<h3>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+				consectetur, adipisci</h3>
+			<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam 
+				corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? 
+				Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
+				nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas 
+				nulla pariatur eum iure reprehenderit qui in ea voluptate velit esse quam 
+				nihil molestiae consequatur.</p>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //about -->
+<!-- our-advantages -->
+	<div class="our-advantages">
+		<div class="container">
+			<h3>Our Advantages</h3>
+			<div class="our-advantages-grids">
+				<div class="col-md-4 our-advantages-grid">
+					<div class="col-xs-3 our-advantages-grd-left">
+						<p>1.</p>
+					</div>
+					<div class="col-xs-9 our-advantages-grd-right">
+						<h4>voluptate velit esse quam pariatur eum iure</h4>
+						<p>Vel illum qui dolorem eum fugiat quo voluptas 
+							nulla pariatur eum iure reprehenderit.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 our-advantages-grid">
+					<div class="col-xs-3 our-advantages-grd-left">
+						<p>2.</p>
+					</div>
+					<div class="col-xs-9 our-advantages-grd-right">
+						<h4>voluptate velit esse quam pariatur eum iure</h4>
+						<p>Vel illum qui dolorem eum fugiat quo voluptas 
+							nulla pariatur eum iure reprehenderit.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 our-advantages-grid">
+					<div class="col-xs-3 our-advantages-grd-left">
+						<p>3.</p>
+					</div>
+					<div class="col-xs-9 our-advantages-grd-right">
+						<h4>voluptate velit esse quam pariatur eum iure</h4>
+						<p>Vel illum qui dolorem eum fugiat quo voluptas 
+							nulla pariatur eum iure reprehenderit.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="our-advantages-grids">
+				<div class="col-md-4 our-advantages-grid">
+					<div class="col-xs-3 our-advantages-grd-left">
+						<p>4.</p>
+					</div>
+					<div class="col-xs-9 our-advantages-grd-right">
+						<h4>voluptate velit esse quam pariatur eum iure</h4>
+						<p>Vel illum qui dolorem eum fugiat quo voluptas 
+							nulla pariatur eum iure reprehenderit.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 our-advantages-grid">
+					<div class="col-xs-3 our-advantages-grd-left">
+						<p>5.</p>
+					</div>
+					<div class="col-xs-9 our-advantages-grd-right">
+						<h4>voluptate velit esse quam pariatur eum iure</h4>
+						<p>Vel illum qui dolorem eum fugiat quo voluptas 
+							nulla pariatur eum iure reprehenderit.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 our-advantages-grid">
+					<div class="col-xs-3 our-advantages-grd-left">
+						<p>6.</p>
+					</div>
+					<div class="col-xs-9 our-advantages-grd-right">
+						<h4>voluptate velit esse quam pariatur eum iure</h4>
+						<p>Vel illum qui dolorem eum fugiat quo voluptas 
+							nulla pariatur eum iure reprehenderit.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //our-advantages -->
+<!-- about-bottom -->
+	<div class="about-bottom">
+		<div class="container">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="about-bottom-info">
+								<h3>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</h3>
+								<p>Temporibus autem quibusdam et aut officiis debitis aut rerum 
+									necessitatibus saepe eveniet ut et voluptates repudiandae sint et 
+									molestiae non recusandae.</p>
+							</div>
+						</li>
+						<li>
+							<div class="about-bottom-info">
+								<h3>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</h3>
+								<p>Temporibus autem quibusdam et aut officiis debitis aut rerum 
+									necessitatibus saepe eveniet ut et voluptates repudiandae sint et 
+									molestiae non recusandae.</p>
+							</div>
+						</li>
+						<li>
+							<div class="about-bottom-info">
+								<h3>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</h3>
+								<p>Temporibus autem quibusdam et aut officiis debitis aut rerum 
+									necessitatibus saepe eveniet ut et voluptates repudiandae sint et 
+									molestiae non recusandae.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+							<!--FlexSlider-->
+									<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+									<script defer src="js/jquery.flexslider.js"></script>
+									<script type="text/javascript">
+									$(function(){
+									  SyntaxHighlighter.all();
+									});
+									$(window).load(function(){
+									  $('.flexslider').flexslider({
+										animation: "slide",
+										start: function(slider){
+										  $('body').removeClass('loading');
+										}
+									  });
+									});
+								  </script>
+							<!--End-slider-script-->
+		</div>
+	</div>
+<!-- //about-bottom -->
+<!-- products -->
+	<div class="products" id="products">
+		<div class="container">
+			<h3>What We Offer</h3>
+				<div class="product-grids">
+					<div class="col-md-4 product-grid">
+						<div class="product-gd">
+							<div class="product-gd1">
+								<a class="mask" href="images/3.jpg"><img src="images/3.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="product-grd">
+								<h4><a href="single.html">dui enim porta lectus voluptates repudiandae</a></h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis,
+									ante interdum vehicula pretium, dui enim porta lectus.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 product-grid">
+						<div class="product-gd">
+							<div class="product-gd1">
+								<a class="mask" href="images/5.jpg"><img src="images/5.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="product-grd">
+								<h4><a href="single.html">dui enim porta lectus voluptates repudiandae</a></h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis,
+									ante interdum vehicula pretium, dui enim porta lectus.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 product-grid">
+						<div class="product-gd">
+							<div class="product-gd1">
+								<a class="mask" href="images/4.jpg"><img src="images/4.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="product-grd">
+								<h4><a href="single.html">dui enim porta lectus voluptates repudiandae</a></h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis,
+									ante interdum vehicula pretium, dui enim porta lectus.</p>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="product-grids">
+					<div class="col-md-4 product-grid">
+						<div class="product-gd">
+							<div class="product-gd1">
+								<a class="mask" href="images/6.jpg"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="product-grd">
+								<h4><a href="single.html">dui enim porta lectus voluptates repudiandae</a></h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis,
+									ante interdum vehicula pretium, dui enim porta lectus.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 product-grid">
+						<div class="product-gd">
+							<div class="product-gd1">
+								<a class="mask" href="images/7.jpg"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="product-grd">
+								<h4><a href="single.html">dui enim porta lectus voluptates repudiandae</a></h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis,
+									ante interdum vehicula pretium, dui enim porta lectus.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 product-grid">
+						<div class="product-gd">
+							<div class="product-gd1">
+								<a class="mask" href="images/8.jpg"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="product-grd">
+								<h4><a href="single.html">dui enim porta lectus voluptates repudiandae</a></h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis,
+									ante interdum vehicula pretium, dui enim porta lectus.</p>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			<div class="special">
+				<h4>Special Offers</h4>
+					<div class="special-grids">
+						<div class="col-md-4 special-grid">
+							<div class="col-xs-4 special-grd-left">
+								<p><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span></p>
+							</div>
+							<div class="col-xs-8 special-grd">
+								<h5>fugiat quo voluptas nulla pariatur</h5>
+								<p>Nisi ut aliquid ex ea commodi consequatur? Quis autem 
+								vel eum iure reprehenderit qui in ea voluptate velit esse 
+								quam nihil molestiae consequatur.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 special-grid">
+							<div class="col-xs-4 special-grd-left">
+								<p><span class="glyphicon glyphicon-user" aria-hidden="true"></span></p>
+							</div>
+							<div class="col-xs-8 special-grd">
+								<h5>fugiat quo voluptas nulla pariatur</h5>
+								<p>Nisi ut aliquid ex ea commodi consequatur? Quis autem 
+								vel eum iure reprehenderit qui in ea voluptate velit esse 
+								quam nihil molestiae consequatur.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 special-grid">
+							<div class="col-xs-4 special-grd-left">
+								<p><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span></p>
+							</div>
+							<div class="col-xs-8 special-grd">
+								<h5>fugiat quo voluptas nulla pariatur</h5>
+								<p>Nisi ut aliquid ex ea commodi consequatur? Quis autem 
+								vel eum iure reprehenderit qui in ea voluptate velit esse 
+								quam nihil molestiae consequatur.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+			</div>
+		</div>
+	</div>
+<!-- //products -->
+<!-- products-bottom -->
+	<div class="products-bottom">
+		<div class="container">
+			<div class="get-in-grids">
+				<div class="get-in-grid-left">
+					<p>Newsletter</p>
+				</div>
+				<div class="get-in-grid-right">
+					<input type="text" value="Enter Your Mail..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Mail...';}" required="">
+					<input type="submit" value="Subscribe" >
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //products-bottom -->
+<!-- events -->
+	<div class="event" id="event">
+		<div class="container">
+			<h3>Events</h3>
+				<div class="event-grids">
+					<div class="col-md-6 event-grid">
+						<div class="event-grd">
+							<div class="product-gd1">
+								<a class="mask" href="images/10.jpg"><img src="images/10.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="evnt-grd">
+								<div class="col-xs-3 evnt-grd-left">
+									<p>17th<span>July</span></p>
+								</div>
+								<div class="col-xs-9 evnt-grd-right">
+									<h3><a href="single.html">voluptate velit esse quam nihil molestiae consequatur</a></h3>
+									<p> Temporibus autem quibusdam et aut officiis debitis aut
+										rerum necessitatibus saepe eveniet ut et voluptates 
+										repudiandae sint et molestiae non recusandae.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 event-grid">
+						<div class="event-grd">
+							<div class="product-gd1">
+								<a class="mask" href="images/11.jpg"><img src="images/11.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="evnt-grd">
+								<div class="col-xs-3 evnt-grd-left">
+									<p>20th<span>July</span></p>
+								</div>
+								<div class="col-xs-9 evnt-grd-right">
+									<h3><a href="single.html">voluptate velit esse quam nihil molestiae consequatur</a></h3>
+									<p> Temporibus autem quibusdam et aut officiis debitis aut
+										rerum necessitatibus saepe eveniet ut et voluptates 
+										repudiandae sint et molestiae non recusandae.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="event-grids">
+					<div class="col-md-6 event-grid">
+						<div class="event-grd">
+							<div class="product-gd1">
+								<a class="mask" href="images/12.jpg"><img src="images/12.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="evnt-grd">
+								<div class="col-xs-3 evnt-grd-left">
+									<p>28th<span>July</span></p>
+								</div>
+								<div class="col-xs-9 evnt-grd-right">
+									<h3><a href="single.html">voluptate velit esse quam nihil molestiae consequatur</a></h3>
+									<p> Temporibus autem quibusdam et aut officiis debitis aut
+										rerum necessitatibus saepe eveniet ut et voluptates 
+										repudiandae sint et molestiae non recusandae.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 event-grid">
+						<div class="event-grd">
+							<div class="product-gd1">
+								<a class="mask" href="images/13.jpg"><img src="images/13.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="evnt-grd">
+								<div class="col-xs-3 evnt-grd-left">
+									<p>31st<span>July</span></p>
+								</div>
+								<div class="col-xs-9 evnt-grd-right">
+									<h3><a href="single.html">voluptate velit esse quam nihil molestiae consequatur</a></h3>
+									<p>Temporibus autem quibusdam et aut officiis debitis aut
+										rerum necessitatibus saepe eveniet ut et voluptates 
+										repudiandae sint et molestiae non recusandae.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+		</div>
+	</div>
+<!-- //events -->
+<!-- mail -->
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.958900464012!2d36.23097800000001!3d49.993379999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f009ab9f07%3A0xa21e10f67fa29ce!2sGeorgia+Education+Center!5e0!3m2!1sen!2sin!4v1436943860334" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	<div class="mail" id="mail">
+		<div class="container">
+			<div class="feedback-info">
+				<h3>Mail Us</h3>
+				<p class="lo">Lorem Ipsum is simply dummy text of the
+					printing and typesetting industry. Lorem Ipsum has been 
+					the industry's standard dummy text ever since the 1500s</p>
+				<div class="name">
+					<p id="contact">Your name:</p>
+					<form>
+						<input type="text" placeholder="Name" required=" ">
+					</form>
+				</div>
+				<div class="name na">
+					<p>E-mail:</p>
+					<form>
+						<input type="text" placeholder="Enter Your Email Here..." required=" ">
+					</form>
+				</div>
+				<div class="name">
+					<p>Phone number:</p>
+					<form>
+						<input type="text" placeholder="+2057 487 906" required=" ">
+					</form>
+				</div>
+				<div class="comment">
+					<p>Message:</p>
+					<form>
+						<textarea placeholder="Write your message here...." required=" "></textarea>
+					</form>
+				</div>
+				<div class="sub">
+					<form>
+						<input type="submit" value="Send">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //mail -->
+<!-- footer -->
+	<div class="footer">
+		<div class="footer-grids">
+		  <div class="container">
+			<div class="col-md-3 footer-grid">
+				<h4>Services</h4>
+				<ul>
+					<li><a href="#">rerum hic tenetur</a></li>
+					<li><a href="#">molestiae non recusandae</a></li>
+					<li><a href="#">voluptates repudiandae</a></li>
+					<li><a href="#">necessitatibus saepe</a></li>
+					<li><a href="#">debitis aut rerum</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h4>Information</h4>
+				 <ul>
+					<li><a href="#">quibusdam et aut</a></li>
+					<li><a href="#">Testimonals</a></li>
+					<li><a href="#">Archives</a></li>
+					<li><a href="#">Our Staff</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h4>More details</h4>
+				<ul>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms &amp; Conditions</a></li>
+					<li><a href="#">Site map</a></li>
+				</ul>
+			</div>
+			 <div class="col-md-3 footer-grid contact-grid">
+					<h4>Contact us</h4>
+					<ul>
+						<li><span class="c-icon"> </span>Newyork Still Road.</li>
+						<li><span class="c-icon1"> </span><a href="mailto:info@example.com">mail@example.com</a></li>
+						<li><span class="c-icon2"> </span>756 gt globel Place</li>
+					</ul>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+		</div>
+	</div>
+	<div class="copy">
+		 <p>Copyright © 2015 Harvest. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+		<script src="js/bootstrap.js"> </script>
+<!-- //for bootstrap working -->
+</body>
+</html>
