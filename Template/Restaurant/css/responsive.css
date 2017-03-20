@@ -1,0 +1,39 @@
+@media screen and (max-width: 991px) {
+	.owlcaption h2{
+		font-size: 36px;
+	}
+	.owlcaption p{
+		font-size: 16px;
+	}	
+
+	.home-blog-item{
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	#restaurant{
+		display: none;
+	}
+	.tinynav{
+		display: block;
+		width:300px;
+		margin:0px auto;
+	}
+	.main-navigation{
+		margin:20px auto;
+	}
+
+	.site-branding{
+		text-align: center;
+	}
+
+	#masthead .site-branding h1.site-title{
+		margin:10px 0px 0px 0px;
+	}
+	.owlcaption {
+		display: none;
+	}
+}
+

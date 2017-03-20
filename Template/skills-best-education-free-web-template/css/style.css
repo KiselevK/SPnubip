@@ -65,15 +65,24 @@ ul.withArrow li{
 	
 }
 ul.withArrow li span{
-	margin-right: 10px;
-	font-weight: 700;
-	color: #86BC42;
-	border: 1px solid;
-	padding: 4px 8px;
-	font-size: 11px;
-	border-radius: 50%;
-	height: 20px;
-	width: 20px;
+	
+margin-right: 10px;
+	
+font-weight: 700;
+	
+color: #86BC42;
+	
+border: 1px solid;
+	
+padding: 4px 8px;
+	
+font-size: 11px;
+	
+border-radius: 50%;
+	
+height: 20px;
+	
+width: 20px;
 }
 .widget {
     color: #858585;

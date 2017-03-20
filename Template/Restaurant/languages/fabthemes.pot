@@ -1,0 +1,143 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in echo
+#: Restaurant/homepage.php:45
+msgid "About Us"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/index.php:20
+#: Restaurant/single.php:15
+msgid "Blog"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/comments.php:62
+msgid "Comment navigation"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/comments.php:79
+msgid "Comments are closed."
+msgstr ""
+
+#. Text in function
+#: Restaurant/template-parts/content.php:40
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/homepage.php:193
+msgid "From Blog"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/homepage.php:166
+msgid "Happy Customers"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/404.php:22
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/template-parts/content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#. Text in echo
+#: Restaurant/homepage.php:193
+msgid "Latest posts from our blog"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/homepage.php:235
+msgid "Make reservations"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/homepage.php:121
+msgid "Meet our stars"
+msgstr ""
+
+#. Text in function
+#: Restaurant/comments.php:66
+msgid "Newer Comments"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. Text in function
+#: Restaurant/comments.php:65
+msgid "Older Comments"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#. Text in echo
+#: Restaurant/reservation.php:49
+msgid "Our Location"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/homepage.php:121
+msgid "Our staff"
+msgstr ""
+
+#. Text in function
+#: Restaurant/template-parts/content-page.php:18
+#: Restaurant/template-parts/content.php:40
+#: Restaurant/menupage.php:47
+#: Restaurant/reservation.php:65
+msgid "Pages:"
+msgstr ""
+
+#. Text in function
+#: Restaurant/template-parts/content-none.php:21
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#. Text in echo
+#: Restaurant/homepage.php:235
+msgid "Reservation"
+msgstr ""
+
+#. Text in function
+#: Restaurant/search.php:15
+msgid "Search Results for: %s"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/template-parts/content-none.php:25
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#. Text in echo
+#: Restaurant/homepage.php:88
+msgid "Special Today"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/homepage.php:88
+msgid "Special today in our restaurant"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/homepage.php:45
+msgid "Story of our restaurant"
+msgstr ""
+
+#. Text in echo
+#: Restaurant/homepage.php:166
+msgid "What our happy customers say"
+msgstr ""
