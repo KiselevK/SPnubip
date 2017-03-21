@@ -15,259 +15,173 @@
 </head>
 <body>
 
-    <div class="topbar">
-                <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="pull-left hidden-xs">
-                        <ul class="pe-social">
-                            <li><a href="#0"><i class="pe-so-vk pe-bg pe-hover pe-lg"></i></a></li>
-                            <li><a href="#0"><i class="pe-so-twitter pe-bg pe-hover pe-lg"></i></a></li>
-                            <li><a href="#0"><i class="pe-so-facebook pe-bg pe-hover pe-lg"></i></a></li>
-                            <li><a href="#0"><i class="pe-so-youtube-1 pe-bg pe-hover pe-lg"></i></a></li>
-                        </ul>
-                    </div>
-                    <p class="pull-right">Times Education   <i class="fa fa-phone"></i>Tel No. (+001) 123-456-789</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- start header -->
-    <header>
-        <div class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></a>
-                </div>
-                <div class="navbar-collapse collapse ">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="about.html">Our Institute</a></li>
-                                <li><a href="#">Our Team</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Investors</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="pricing.html">Fees</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- end header -->
-
-@*<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="@Url.Action("Slider", "Home", new {area = "", @class = "navbar-brand"})">
-                <img src="~/img/nubip_bottom_logo_ua.png"/>
-            </a>
-
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Home", "Slider", "Home")</li>
-                <li>@Html.ActionLink("News", "News", "Home")</li>
-              
-                <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contacts<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li>@Html.ActionLink("Керівництво", "Leaders", "Home")</li>
-                        <li>@Html.ActionLink("Партнеры", "Partners", "Home") </li>
-                            <li>@Html.ActionLink("Контактна інформація", "Contact", "Home")</li>
-                    </ul>
-                </li>
-            </ul>
-            @Html.Partial("_LoginPartial")
-        </div>
-    </div>
-</div>*@
-<div>
-    
-</div>
-<div class="" style="background-color: #dad35d">
-<div class="container body-content">
-    @RenderBody()
-       
-    </div>
-        </div>
-
-
-      
-       
-    <!-- footer-section-starts-here -->
-    @*<div class="footer">
-        <div class="footer-top">
-            <div class="wrap">
-                <div class="col-md-3 col-xs-6 col-sm-4 footer-grid">
-                    <h4 class="footer-head">About Us</h4>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.</p>
-                </div>
-                <div class="col-md-2 col-xs-6 col-sm-2 footer-grid">
-                    <h4 class="footer-head">Categories</h4>
-                    <ul class="cat">
-                        <li><a href="business.html">Business</a></li>
-                        <li><a href="technology.html">Technology</a></li>
-                        <li><a href="entertainment.html">Entertainment</a></li>
-                        <li><a href="sports.html">Sports</a></li>
-                        <li><a href="shortcodes.html">Health</a></li>
-                        <li><a href="fashion.html">Fashion</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-xs-6 col-sm-6 footer-grid">
-                    <h4 class="footer-head">Flickr Feed</h4>
-                    <ul class="flickr">
-                        <li><a href="#"><img src="images/bus4.jpg"></a></li>
-                        <li><a href="#"><img src="images/bus2.jpg"></a></li>
-                        <li><a href="#"><img src="images/bus3.jpg"></a></li>
-                        <li><a href="#"><img src="images/tec4.jpg"></a></li>
-                        <li><a href="#"><img src="images/tec2.jpg"></a></li>
-                        <li><a href="#"><img src="images/tec3.jpg"></a></li>
-                        <li><a href="#"><img src="images/bus2.jpg"></a></li>
-                        <li><a href="#"><img src="images/bus3.jpg"></a></li>
-                        <div class="clearfix"></div>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-xs-12 footer-grid">
-                    <h4 class="footer-head">Contact Us</h4>
-                    <span class="hq">Our headquaters</span>
-                    <address>
-                        <ul class="location">
-                            <li><span class="glyphicon glyphicon-map-marker"></span></li>
-                            <li>CENTER FOR FINANCIAL ASSISTANCE TO DEPOSED NIGERIAN ROYALTY</li>
-                            <div class="clearfix"></div>
-                        </ul>
-                        <ul class="location">
-                            <li><span class="glyphicon glyphicon-earphone"></span></li>
-                            <li>+0 561 111 235</li>
-                            <div class="clearfix"></div>
-                        </ul>
-                        <ul class="location">
-                            <li><span class="glyphicon glyphicon-envelope"></span></li>
-                            <li><a href="mailto:info@example.com">mail@example.com</a></li>
-                            <div class="clearfix"></div>
-                        </ul>
-                    </address>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="wrap">
-                <div class="copyrights col-md-6">
-                    <p> © 2015 Express News. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
-                </div>
-                <div class="footer-social-icons col-md-6">
-                    <ul>
-                        <li><a class="facebook" href="#"></a></li>
-                        <li><a class="twitter" href="#"></a></li>
-                        <li><a class="flickr" href="#"></a></li>
-                        <li><a class="googleplus" href="#"></a></li>
-                        <li><a class="dribbble" href="#"></a></li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>*@
-    <!-- footer-section-ends-here -->
-
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="widget">
-                        <h5 class="widgetheading">Our Contact</h5>
-                        <address>
-                            <strong>Medico company Inc</strong><br>
-                            JC Main Road, Near Silnile tower<br>
-                            Pin-21542 NewYork US.
-                        </address>
-                        <p>
-                            <i class="icon-phone"></i> (123) 456-789 - 1255-12584 <br>
-                            <i class="icon-envelope-alt"></i> email@domainname.com
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="widget">
-                        <h5 class="widgetheading">Quick Links</h5>
-                        <ul class="link-list">
-                            <li><a href="#">Latest Events</a></li>
-                            <li><a href="#">Terms and conditions</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="widget">
-                        <h5 class="widgetheading">Latest posts</h5>
-                        <ul class="link-list">
-                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                            <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-                            <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="widget">
-                        <h5 class="widgetheading">Recent News</h5>
-                        <ul class="link-list">
-                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                            <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-                            <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="sub-footer">
+    <div id="wrapper" class="home-page">
+        <div class="topbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="copyright">
+                    <div class="col-md-12">
+                        <div class="pull-right">
+                            <ul class="pe-social">
+                                <li><a href="#0"><i class="pe-so-vk pe-bg pe-hover pe-lg"></i></a></li>
+                                <li><a href="#0"><i class="pe-so-twitter pe-bg pe-hover pe-lg"></i></a></li>
+                                <li><a href="#0"><i class="pe-so-facebook pe-bg pe-hover pe-lg"></i></a></li>
+                                <li><a href="#0"><i class="pe-so-youtube-1 pe-bg pe-hover pe-lg"></i></a></li>
+                            </ul>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- start header -->
+        <div class="container">
+            <header>
+                <div class="navbar navbar-default navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="@Url.Action("Listing", "Home", new {area = "", @class = "navbar-brand"})">
+                                <img style="height:70px; width:200px" src="~/img/1R4BlF3YvYcI.png" />
+                            </a>
+
+                        </div>
+                        <div class="navbar-collapse collapse ">
+                            <ul class="nav navbar-nav">
+                                <li class="active">@Html.ActionLink("Home", "Slider", "Home")</li>
+                                <li>@Html.ActionLink("News", "News", "Home")</li>
+                                <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contacts<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>@Html.ActionLink("Керівництво", "Leaders", "Home")</li>
+                                        <li>@Html.ActionLink("Партнеры", "Partners", "Home") </li>
+                                        <li>@Html.ActionLink("Контактна інформація", "Contact", "Home")</li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="#">Школа</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- end header -->
+        
+        @*<div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="@Url.Action("Slider", "Home", new {area = "", @class = "navbar-brand"})">
+                            <img src="~/img/nubip_bottom_logo_ua.png"/>
+                        </a>
+
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Home", "Slider", "Home")</li>
+                            <li>@Html.ActionLink("News", "News", "Home")</li>
+
+                            <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contacts<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Керівництво", "Leaders", "Home")</li>
+                                    <li>@Html.ActionLink("Партнеры", "Partners", "Home") </li>
+                                        <li>@Html.ActionLink("Контактна інформація", "Contact", "Home")</li>
+                                </ul>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </div>*@
+        <div>
+
+        </div>
+        <div class="" style="background-color: #fcf7e3">
+            <div class="container body-content">
+                @RenderBody()
+
+            </div>
+        </div>
+
+
+
+
+       
+       
+
+
+        <!-- footer-section-starts-here -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="widget">
+                            <h5 class="widgetheading">Контакты</h5>
+                            <address>
+                                                                                             
+                                <strong>SP nubip </strong><br>
+                                Heroyiv Oborony st.,<br>
+                                Kyiv - 03041, Ukraine
+                            </address>
                             <p>
-                                <span>&copy; Medico 2016 All right reserved. By </span><a href="http://webthemez.com" Medico="_blank">WebThemez</a>
+                                <i class="icon-phone"></i>+38 044 531-36-52<br>
+                                <i class="icon-envelope-alt"></i>rectorat@nubip.edu.ua
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <ul class="social-network">
-                            <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
+                    
+                    <div class="col-lg-3">
+                        <div class="widget">
+                            <h5 class="widgetheading">Latest posts</h5>
+                            <ul class="link-list">
+                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+                                <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="copyright">
+                                <p>
+                                    <span>Nubip @DateTime.Now.Year </span><a href="" Medico="_blank">By Kiselev</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="pe-social">
+                                    <li><a href="#0"><i class="pe-so-vk pe-bg pe-hover pe-lg"></i></a></li>
+                                    <li><a href="#0"><i class="pe-so-twitter pe-bg pe-hover pe-lg"></i></a></li>
+                                    <li><a href="#0"><i class="pe-so-facebook pe-bg pe-hover pe-lg"></i></a></li>
+                                    <li><a href="#0"><i class="pe-so-youtube-1 pe-bg pe-hover pe-lg"></i></a></li>
+                                </ul>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    <!-- footer-section-ends-here -->
 
 
-    @*#153c7e*@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

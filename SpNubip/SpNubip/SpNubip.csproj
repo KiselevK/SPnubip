@@ -237,6 +237,8 @@
     <Content Include="Content\pe-icon-social\fonts\pe-icon-social.svg" />
     <Content Include="Content\pgwslider.css" />
     <Content Include="Content\pgwslider.min.css" />
+    <Content Include="img\1R4BlF3YvYcI.png" />
+    <Content Include="img\R4BlF3YvYcI.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
