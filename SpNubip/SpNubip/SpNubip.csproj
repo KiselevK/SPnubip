@@ -273,6 +273,7 @@
     <Content Include="Content\pe-icon-social\scss\_variables.scss" />
     <None Include="Properties\PublishProfiles\Kiselev.pubxml" />
     <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\ForSlider.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -294,6 +295,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\jssor.slider-22.0.6.mini.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\modernizr.custom.js" />
     <Content Include="Scripts\pgwslider.js" />
     <Content Include="Scripts\pgwslider.min.js" />
     <Content Include="Scripts\respond.js" />
