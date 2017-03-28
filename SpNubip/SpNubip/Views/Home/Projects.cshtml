@@ -1,39 +1,22 @@
-﻿<table id="myTable">
-    <tr class="header">
-        <th style="width:40%;">Name</th>
-        <th style="width:40%;">Description</th>
-        <th style="width:20%">Author</th>
+﻿@using SpNubip.Models;
+@model CategoryProjects
 
-    </tr>
-
-   @foreach (SpNubip.Models.Projects с in Model)
-   {
-       
-    <tr onclick="document.location = '/Home/PageWithProjects/@с.Id_Project';" >
-    <td>@с.Name_Projects</td>
-    <td>@с.Short_Description</td>
-    <td>@с.Author</td>
-</tr>
-       
-        }
-</table>
-
-<script>
-function myFunction() {
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
+@foreach (var categoryProjects in Model.categoryProjects)
+{
+    foreach (var project in categoryProjects)
+    {
+        <p>@project.Title </p>
+        <p>@project.Creator</p>
+        <p>@project.Category.Title_Gategory</p>
+        <p>@project.Img.Url_Img</p>
+        <p>@project.Description</p>
+        <p>@project.Areas_of_application</p>
+        <p>@project.Efficiency</p>
+        <p>@project.Pulpit</p>
+        <p>@project.View</p>
     }
-  }
 }
-</script>
+@foreach (var category in Model.categories)
+{
+    <a href="/Home/Projects/@category.Id_Category">@category.Title_Gategory</a>
+}

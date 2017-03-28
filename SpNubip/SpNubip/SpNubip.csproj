@@ -210,10 +210,10 @@
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Img.cs" />
-    <Compile Include="Models\Imgs_for_projects.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\Partner.cs" />
+    <Compile Include="Models\CategoryProjects.cs" />
     <Compile Include="Models\Project.cs" />
     <Compile Include="Models\SpDBmodel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -235,8 +235,6 @@
     <Content Include="Content\pe-icon-social\css\social-style.css" />
     <Content Include="Content\pe-icon-social\css\social-style.min.css" />
     <Content Include="Content\pe-icon-social\fonts\pe-icon-social.svg" />
-    <Content Include="Content\pgwslider.css" />
-    <Content Include="Content\pgwslider.min.css" />
     <Content Include="img\1R4BlF3YvYcI.png" />
     <Content Include="img\R4BlF3YvYcI.png" />
     <Content Include="favicon.ico" />

@@ -11,7 +11,7 @@ namespace SpNubip.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Img()
         {
-            Imgs_for_projects = new HashSet<Imgs_for_projects>();
+            Projects = new HashSet<Project>();
         }
 
         [Key]
@@ -21,6 +21,6 @@ namespace SpNubip.Models
         public string Url_Img { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Imgs_for_projects> Imgs_for_projects { get; set; }
+        public virtual ICollection<Project> Projects { get; set; }
     }
 }

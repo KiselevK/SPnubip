@@ -29,7 +29,7 @@ namespace SpNubip.Models
         [Required]
         public string View { get; set; }
 
-        public Guid Id_Img_for_projects { get; set; }
+        public Guid Id_Img { get; set; }
 
         public Guid Id_Category { get; set; }
 
@@ -38,6 +38,6 @@ namespace SpNubip.Models
 
         public virtual Category Category { get; set; }
 
-        public virtual Imgs_for_projects Imgs_for_projects { get; set; }
+        public virtual Img Img { get; set; }
     }
 }

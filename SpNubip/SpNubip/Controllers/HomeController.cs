@@ -34,11 +34,29 @@ namespace SpNubip.Controllers
             return View(db.Partners);
         }
 
-        public ActionResult Projects()
+
+        public ActionResult Projects(Guid? id)
         {
-            return View(db.Projects); 
+            IEnumerable<IEnumerable<Project>> projects;
+
+            if (id.HasValue)
+            {
+                projects = db.Categories.Where(c => c.Id_Category == id).Select(c => c.Projects.ToList()).ToList();
+            }
+            else
+            {
+                projects = db.Categories.Select(c => c.Projects.ToList()).ToList();
+            }
+
+            var model = new CategoryProjects
+            {
+                categoryProjects = projects,
+                categories = db.Categories
+            };
+
+            return View(model);
         }
-        
+
 
 
         [HttpGet]
