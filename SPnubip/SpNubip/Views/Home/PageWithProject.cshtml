@@ -1,0 +1,40 @@
+﻿@model SpNubip.Models.Project
+
+
+<div class="page-banner-content">
+    <ol class="breadcrumb">
+        <li><a href="@Url.Action("Slider", "Home")">Головна</a></li>
+        <li><a href="@Url.Action("Projects", "Home")">Прокти</a></li>
+        <li class="active">@Model.Title</li>
+    </ol>
+</div>
+
+<div class="row  row-offcanvas row-offcanvas">
+    <div class="col-xs-12 col-sm-4" >
+        <span class="img-responsive img-thumbnail"><img src="@Model.Img.Url_Img" class="img-responsive" /></span>
+        <p><strong>Категорія: </strong>@Model.Category.Title_Gategory</p>
+        <p><strong>Розробник (автори): </strong>@Model.Creator</p>
+        <p>@Model.Pulpit</p>
+    
+    </div><!--/span-->
+
+
+    <div class="col-xs-12 col-sm-8 ">
+       
+            <h3><b>Назва науково-технічної розробки: </b></h3>
+            <h3>@Model.Title</h3>
+
+            <h4><strong>Новизна розробки: </strong>@Model.Description</h4>
+            <h4><strong>Галузь застосування: </strong>@Model.Areas_of_application</h4>
+        <h4><strong>Ефективність використання або впровадження розробки: </strong>@Model.Efficiency</h4>
+        <h4><strong>Розробка пропонується y вигляді: </strong>@Model.View</h4>
+           
+        
+
+
+
+
+
+    </div><!--/row-->
+</div><!--/span-->
+

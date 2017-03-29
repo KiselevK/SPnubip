@@ -98,21 +98,19 @@ namespace SpNubip.Controllers
         }
 
         [HttpGet]
-        public ActionResult PageWithProjects()
+        public ActionResult PageWithProject(Guid id)
 
         {
-            //if (id == null)    Guid id
-            //{
-            //    return HttpNotFound();
-            //}
-            //var Projects = db.Projects.Find(id);
-            //if (Projects != null)
-            //{
-            //    return View(Projects);
-            //}
-            //return HttpNotFound();
+            
+            var Projects = db.Projects.Find(id);
+            if (Projects != null)
+            {
+                return View(Projects);
+            }
+            else
+            return HttpNotFound();
 
-            return View();
+
         }
 
         //for index layout

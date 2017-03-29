@@ -346,7 +346,7 @@
     <Content Include="Views\Home\PageWithPartners.cshtml" />
     <Content Include="Views\Home\Info.cshtml" />
     <Content Include="Views\Home\Projects.cshtml" />
-    <Content Include="Views\Home\PageWithProjects.cshtml" />
+    <Content Include="Views\Home\PageWithProject.cshtml" />
     <Content Include="Views\Home\_IndexLayout.cshtml" />
     <Content Include="Views\Home\Slider.cshtml" />
     <Content Include="Views\Home\Mission.cshtml" />

@@ -12,7 +12,7 @@
     <!-- Optional - Adds useful class to manipulate icon font display and social color style -->
     <link rel="stylesheet" href="~/Content/pe-icon-social/css/helper.css">
     <link rel="stylesheet" href="~/Content/pe-icon-social/css/social-style.css">
-</head>
+   </head>
 <body>
 
     <div id="wrapper" class="home-page">
@@ -51,8 +51,8 @@
 
                         </div>
                         <div class="navbar-collapse collapse ">
-                            <ul class="nav navbar-nav">
-                                <li>@Html.ActionLink("Домашня", "Slider", "Home")</li>
+                            <ul class="nav navbar-nav pagination">
+                                <li>@Html.ActionLink("Головна", "Slider", "Home")</li>
                                 <li>@Html.ActionLink("Новини", "News", "Home")</li>
                                 <li>@Html.ActionLink("Проекти", "Projects", "Home")</li>
                                 <li class="dropdown">
@@ -76,7 +76,7 @@
         <!--Center-->
 
         <div class="" style="background-color: #fcf7e3">
-            <div class="container body-content" style="background-color: #fcf7e3; padding-top: 20px; padding-bottom: 20px ">
+            <div class="container body-content" style="background-color: #fcf7e3;min-height:700px; padding-top: 20px; padding-bottom: 20px ">
                 @RenderBody()
 
             </div>

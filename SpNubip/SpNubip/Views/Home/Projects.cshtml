@@ -1,22 +1,78 @@
 ﻿@using SpNubip.Models;
 @model CategoryProjects
 
-@foreach (var categoryProjects in Model.categoryProjects)
-{
-    foreach (var project in categoryProjects)
-    {
-        <p>@project.Title </p>
-        <p>@project.Creator</p>
-        <p>@project.Category.Title_Gategory</p>
-        <p>@project.Img.Url_Img</p>
-        <p>@project.Description</p>
-        <p>@project.Areas_of_application</p>
-        <p>@project.Efficiency</p>
-        <p>@project.Pulpit</p>
-        <p>@project.View</p>
-    }
-}
-@foreach (var category in Model.categories)
-{
-    <a href="/Home/Projects/@category.Id_Category">@category.Title_Gategory</a>
-}
+<div class="page-banner-content">
+        <ol class="breadcrumb">
+            
+            <li><a href="@Url.Action("Slider", "Home")">Головна</a></li>
+        <li class="active">Проекти</li>
+    </ol>
+</div>
+
+<div class="row  row-offcanvas row-offcanvas">
+        <div class="col-xs-12 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+            <div class="list-group">
+                <a class="list-group-item" href="/Home/Projects">Усі категорії</a>
+              @foreach (var category in Model.categories)
+              {
+                <a  class="list-group-item" href="/Home/Projects/@category.Id_Category">@category.Title_Gategory</a>
+              }
+            </div>
+        </div><!--/span-->
+
+
+    <div class="col-xs-12 col-sm-9 ">
+        <p class="visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+        </p>
+        <div class="row">
+            @foreach (var categoryProjects in Model.categoryProjects)
+            {
+                foreach (var project in categoryProjects)
+                {
+
+
+                    <div class="col-md-4" style="height:300px">
+                        <div class="thumbnail">
+                            <a href="/Home/PageWithProject/@project.Id_Project">
+                                <img src="@project.Img.Url_Img" alt="Lights" style="width:100%">
+                                <div class="caption">
+                                    <p>@project.Title </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                }
+                foreach (var project in categoryProjects)
+                {
+
+
+                    <div class="col-md-4" style="height:300px">
+                        <div class="thumbnail">
+                            <a href="/Home/PageWithProject/@project.Id_Project">
+                                <img class="img-responsive" src="@project.Img.Url_Img" alt="Lights" style="width:100%">
+                                <div class="caption">
+                                    <p>@project.Title </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+
+
+
+                
+
+              </div><!--/row-->
+        </div><!--/span-->
+
+        
+  @*<div class ="col-sm-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><p>@project.Title </p></div>
+                <div class="panel-body"><img src="@project.Img.Url_Img" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-footer">@project.Category.Title_Gategory</div>
+            </div>
+    </div>*@

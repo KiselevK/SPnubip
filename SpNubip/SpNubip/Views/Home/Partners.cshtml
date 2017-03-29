@@ -1,4 +1,10 @@
-﻿<h2>Partners</h2>
+﻿<div class="page-banner-content">
+    <ol class="breadcrumb">
+        <li><a href="@Url.Action("Slider", "Home")">Головна</a></li>
+        <li class="active">Партнери</li>
+    </ol>
+</div>
+
 @foreach (SpNubip.Models.Partner a in Model)
 {
     <a href="/Home/PageWithPartners/@a.Id_Partners">
