@@ -7,48 +7,135 @@
     </title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
-</head>
+    <link rel="stylesheet" href="~/Content/pe-icon-social/css/pe-icon-social.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Optional - Adds useful class to manipulate icon font display and social color style -->
+    <link rel="stylesheet" href="~/Content/pe-icon-social/css/helper.css">
+    <link rel="stylesheet" href="~/Content/pe-icon-social/css/social-style.css">
+   </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="@Url.Action("Index", "Home", new { area = "", @class = "navbar-brand" })">
-                    <img src="~/img/nubip_bottom_logo_ua.png" />
-                </a>
-              
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Listing", "Home")</li>
-                    <li>@Html.ActionLink("News", "News", "Home")</li>
-                   <!--  <li></li>--> 
-                    <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contacts<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Керівництво", "Leaders", "Home")</li>
-                            <li>@Html.ActionLink("Партнеры", "Partners", "Home")  </li>
-                            <li>@Html.ActionLink("Контактна інформація", "Contact", "Home")</a></li>
-                        </ul>
-                    </li>
-                   </ul>
-                @Html.Partial("_LoginPartial")
+
+    <div id="wrapper" class="home-page">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="pull-right">
+                            <ul class="pe-social">
+                                <li><a href="#0"><i class="pe-so-vk pe-bg pe-hover pe-lg"></i></a></li>
+                                <li><a href="#0"><i class="pe-so-twitter pe-bg pe-hover pe-lg"></i></a></li>
+                                <li><a href="#0"><i class="pe-so-facebook pe-bg pe-hover pe-lg"></i></a></li>
+                                <li><a href="#0"><i class="pe-so-youtube-1 pe-bg pe-hover pe-lg"></i></a></li>
+                            </ul>
+                        </div>
+
+                        
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
+        <!-- start header -->
+        <div class="container">
+            <header>
+                <div class="navbar navbar-default navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="@Url.Action("Slider", "Home", new {area = "", @class = "navbar-brand"})">
+                                <img style="height:70px; width:200px" src="~/img/1R4BlF3YvYcI.png" />
+                            </a>
+
+                        </div>
+                        <div class="navbar-collapse collapse ">
+                            <ul class="nav navbar-nav pagination">
+                                <li>@Html.ActionLink("Головна", "Slider", "Home")</li>
+                                <li>@Html.ActionLink("Новини", "News", "Home")</li>
+                                <li>@Html.ActionLink("Проекти", "Projects", "Home")</li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Контактна інформація<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>@Html.ActionLink("Керівництво", "Leaders", "Home")</li>
+                                        <li>@Html.ActionLink("Партнеры", "Partners", "Home") </li>
+                                        <li>@Html.ActionLink("Контактна інформація", "Contact", "Home")</li>
+
+                                    </ul>
+                                </li>
+                                <li>@Html.ActionLink("Стартап школа", "StartupSckool", "Home")</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- end header -->
+      
+        <!--Center-->
+
+        <div class="" style="background-color: #fcf7e3">
+            <div class="container body-content" style="background-color: #fcf7e3;min-height:700px; padding-top: 20px; padding-bottom: 20px ">
+                @RenderBody()
+
+            </div>
+        </div>
+
+
+
+
+       
+       
+
+
+        <!-- footer-section-starts-here -->
         <footer>
-            <p>&copy; @DateTime.Now - Nubip </p>
-        </footer>
+              <div class="container top">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="widget">
+                            <h5 class="">Контакты</h5>
+                            <address>
+                                                                                             
+                                <strong>SP nubip </strong><br>
+                                Heroyiv Oborony st.,<br>
+                                Kyiv - 03041, Ukraine
+                            </address>
+                            <p>
+                                <i class="icon-phone"></i>+38 044 531-36-52<br>
+                                <i class="icon-envelope-alt"></i>rectorat@nubip.edu.ua
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="widget">
+                            <h5 class="widgetheading">Latest posts</h5>
+                            <ul class="link-list">
+                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+                                <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="widgetheading">Ми у соціальних мережах</h5>
+                        <ul class="btn-group-vertical pe-social">
+                            <li><a href="#0"><i class="pe-so-vk pe-bg pe-hover pe-lg"></i></a></li>
+                            <li><a href="#0"><i class="pe-so-twitter pe-bg pe-hover pe-lg"></i></a></li>
+                            <li><a href="#0"><i class="pe-so-facebook pe-bg pe-hover pe-lg"></i></a></li>
+                            <li><a href="#0"><i class="pe-so-youtube-1 pe-bg pe-hover pe-lg"></i></a></li>
+                        </ul>
+
+                    </div>
+                    
+                </div>
+            </div>
+           </footer>
     </div>
+    <!-- footer-section-ends-here -->
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

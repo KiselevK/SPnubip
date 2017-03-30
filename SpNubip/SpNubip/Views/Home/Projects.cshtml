@@ -22,28 +22,32 @@
 
 
     <div class="col-xs-12 col-sm-9 ">
-        <p class="visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-        </p>
-        <div class="row">
+                <div class="row">
             @foreach (var categoryProjects in Model.categoryProjects)
             {
                 foreach (var project in categoryProjects)
                 {
+                    <a href="/Home/PageWithProject/@project.Id_Project">
+                        <div class="example">
+                            <img src="@project.Img.Url_Img" class="example_beauty img-rounded" />
+                            <div class="example_text">
+                                <h6>@project.Title</h6>
 
-
-                    <div class="col-md-4" style="height:300px">
-                        <div class="thumbnail">
-                            <a href="/Home/PageWithProject/@project.Id_Project">
-                                <img src="@project.Img.Url_Img" alt="Lights" style="width:100%">
-                                <div class="caption">
-                                    <p>@project.Title </p>
-                                </div>
-                            </a>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+
+                    <a href="/Home/PageWithProject/@project.Id_Project">
+                        <div class="example">
+                            <img src="@project.Img.Url_Img" class="example_beauty img-rounded" />
+                            <div class="example_text">
+                                <h6>@project.Title</h6>
+
+                            </div>
+                        </div>
+                    </a>
                 }
-                foreach (var project in categoryProjects)
+                @*foreach (var project in categoryProjects)
                 {
 
 
@@ -57,7 +61,7 @@
                             </a>
                         </div>
                     </div>
-                }
+                }*@
             }
         </div>
 

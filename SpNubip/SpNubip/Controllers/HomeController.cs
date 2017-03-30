@@ -158,6 +158,10 @@ namespace SpNubip.Controllers
         //};
 
 
+        public ActionResult StartupSckool()
+        {
+            return View();
+        }
     }
 
 

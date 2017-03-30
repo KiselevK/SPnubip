@@ -1,9 +1,16 @@
 ﻿
 @model SpNubip.Models.News
 <h2>News</h2>
+<div class="page-banner-content">
+    <ol class="breadcrumb">
+        <li><a href="@Url.Action("Slider", "Home")">Головна</a></li>
+        <li><a href="@Url.Action("News", "Home")">Новини</a></li>
+        <li class="active">@Model.Title</li>
+    </ol>
+</div>
 
 
 <h3>@Model.Title</h3>
 <img class="img-responsive" src="@Model.Img" /><br />
-@Model.NewText
+@Model.News1
 <p><a href="/Home/News" class="btn btn-primary btn-lg">Повернутись</a></p>
