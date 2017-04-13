@@ -20,7 +20,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="pull-right">
+                        <div class="pull-left">
                             <ul class="pe-social">
                                 <li><a href="#0"><i class="pe-so-vk pe-bg pe-hover pe-lg"></i></a></li>
                                 <li><a href="#0"><i class="pe-so-twitter pe-bg pe-hover pe-lg"></i></a></li>
@@ -28,7 +28,7 @@
                                 <li><a href="#0"><i class="pe-so-youtube-1 pe-bg pe-hover pe-lg"></i></a></li>
                             </ul>
                         </div>
-
+                        <div class="pull-right">@Html.Partial("_LoginPartial")</div>
                         
                     </div>
                 </div>
@@ -50,8 +50,8 @@
                             </a>
 
                         </div>
-                        <div class="navbar-collapse collapse ">
-                            <ul class="nav navbar-nav pagination">
+                        <div class="navbar-collapse collapse " >
+                            <ul class="nav navbar-nav ">
                                 <li>@Html.ActionLink("Головна", "Slider", "Home")</li>
                                 <li>@Html.ActionLink("Новини", "News", "Home")</li>
                                 <li>@Html.ActionLink("Проекти", "Projects", "Home")</li>
@@ -75,8 +75,8 @@
       
         <!--Center-->
 
-        <div class="" style="background-color: #fcf7e3">
-            <div class="container body-content" style="background-color: #fcf7e3;min-height:700px; padding-top: 20px; padding-bottom: 20px ">
+        <div class="" >
+            <div class="container body-content" style="min-height:700px; padding-top: 20px; padding-bottom: 20px ">
                 @RenderBody()
 
             </div>
