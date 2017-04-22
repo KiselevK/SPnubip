@@ -63,16 +63,18 @@ namespace SpNubip.Controllers
         public ActionResult PageWithPartners(Guid id)
         {
             {
-                if (id == null)
-                {
-                    return HttpNotFound();
-                }
+               
                 var partners = db.Partners.Find(id);
                 if (partners != null)
                 {
                     return View(partners);
                 }
-                return HttpNotFound();
+                else
+                {
+                    return HttpNotFound();
+
+                }
+              
             }
         }
 
@@ -80,16 +82,17 @@ namespace SpNubip.Controllers
         public ActionResult PageWithNew(Guid id)
                   
         {
-            if (id == null)
-            {
-                return HttpNotFound();
-            }
+           
             var news = db.News.Find(id);
             if (news != null)
             {
                 return View(news);
             }
-            return HttpNotFound();
+            else
+            {
+                return HttpNotFound();
+            }
+            
         }
 
         public ActionResult Info()
@@ -159,6 +162,16 @@ namespace SpNubip.Controllers
 
 
         public ActionResult StartupSckool()
+        {
+            return View();
+        }
+
+        public ActionResult MainPage()
+        {
+            return View();
+        }
+
+        public ActionResult Advantages()
         {
             return View();
         }

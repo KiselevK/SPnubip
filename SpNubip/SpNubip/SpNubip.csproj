@@ -236,6 +236,8 @@
     <Content Include="Content\pe-icon-social\css\social-style.css" />
     <Content Include="Content\pe-icon-social\css\social-style.min.css" />
     <Content Include="Content\pe-icon-social\fonts\pe-icon-social.svg" />
+    <Content Include="img\1_57.jpg" />
+    <Content Include="img\TeclyukVV.png" />
     <Content Include="Scripts\easing.js" />
     <Content Include="Scripts\move-top.js" />
     <Content Include="Scripts\responsiveslides.min.js" />
@@ -372,6 +374,8 @@
     <Content Include="Views\Admin\DeveloperLinks.cshtml" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Home\StartupSckool.cshtml" />
+    <Content Include="Views\Home\MainPage.cshtml" />
+    <Content Include="Views\Home\Advantages.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
