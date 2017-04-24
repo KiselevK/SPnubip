@@ -208,6 +208,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\DataForIndexLayout.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Img.cs" />
     <Compile Include="Models\ManageViewModels.cs" />

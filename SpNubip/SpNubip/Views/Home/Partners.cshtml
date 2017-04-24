@@ -1,9 +1,7 @@
-﻿<div class="page-banner-content">
-    <ol class="breadcrumb">
-        <li><a href="@Url.Action("MainPage", "Home")">Головна</a></li>
-        <li class="active">Партнери</li>
-    </ol>
-</div>
+﻿@{
+    Layout = "~/Views/Home/_IndexLayout.cshtml";
+}
+
 
 @foreach (SpNubip.Models.Partner a in Model)
 {
