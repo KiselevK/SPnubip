@@ -168,10 +168,15 @@ namespace SpNubip.Controllers
 
         public ActionResult MainPage()
         {
-            return View();
+            return View(db.News);
         }
 
         public ActionResult Advantages()
+        {
+            return View();
+        }
+
+        public ActionResult _SliderPartial()
         {
             return View();
         }
