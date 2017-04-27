@@ -8,6 +8,9 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="~/Content/pe-icon-social/css/pe-icon-social.css">
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Optional - Adds useful class to manipulate icon font display and social color style -->
     <link rel="stylesheet" href="~/Content/pe-icon-social/css/helper.css">
@@ -137,8 +140,5 @@
     <!-- footer-section-ends-here -->
 
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>

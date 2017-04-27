@@ -574,7 +574,7 @@ header  .navbar-nav > li > a {
 
 .dropdown-menu li a:hover {
     color: #fff !important;
-    background: #2B96CC !important;
+    background: #187FB3 !important;
 }
 
 header .nav .caret {
@@ -1359,12 +1359,6 @@ padding-top: 3px;
 	}
 	
 
-	
-	li.active  {
-		border: none;
-		overflow: hidden;
-		background: #2B96CC;
-}
 
 	
 	.box {

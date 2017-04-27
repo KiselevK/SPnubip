@@ -9,21 +9,30 @@
     <div class="page-banner-content">
        
         <ol class="breadcrumb">
-              <li class="active">Головна</li>
+            <li class="active">Головна</li>
         </ol>
     </div>
     
 
+    <script>
+      //  debugger 
+        function activate(e) {
+            debugger;
+            e.classList.toggle("active");
+        };
+
+    </script>
+
     <div class="row  row-offcanvas row-offcanvas">
         <div class="pull-right col-xs-12 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
             <div class="list-group ">
-                
-                <a href="@Url.Action("MainPage", "Home")" class="list-group-item btn btn-primary">Головна</a>
-                <a href="@Url.Action("Mission", "Home")" class="list-group-item btn btn-primary">Місія</a>
-                <a href="@Url.Action("Potential", "Home")" class="list-group-item btn btn-primary">Переваги участі</a>
-                <a href="@Url.Action("Partners", "Home")" class="list-group-item btn btn-primary">Партнери</a>
-                <a href="@Url.Action("Leaders", "Home")" class="list-group-item btn btn-primary">Керівництво</a>
-                <a href="@Url.Action("Contact", "Home")" class="list-group-item btn btn-primary">Контакти</a>
+               
+                <a  @*href="@Url.Action("MainPage", "Home")"*@ onclick="activate(this)" class="list-group-item btn btn-primary active">Головна</a>
+                <a @*href="@Url.Action("Mission", "Home")" *@  onclick="activate(this)" class="list-group-item btn btn-primary">Місія</a>
+                <a @*href="@Url.Action("Potential", "Home")"*@  onclick="activate(this)" class="list-group-item btn btn-primary">Переваги участі</a>
+                <a @*href="@Url.Action("Partners", "Home")"  *@  onclick="activate(this)" class="list-group-item btn btn-primary">Партнери</a>
+                <a @*href="@Url.Action("Leaders", "Home")"  *@  onclick="activate(this)" class="list-group-item btn btn-primary">Керівництво</a>
+                <a @*href="@Url.Action("Contact", "Home")" *@  onclick="activate(this)" class="list-group-item btn btn-primary">Контакти</a>
 
             </div>
         </div><!--/span-->
