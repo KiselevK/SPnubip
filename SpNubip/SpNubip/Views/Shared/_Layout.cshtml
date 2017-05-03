@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="~/Content/pe-icon-social/css/pe-icon-social.css">
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
     @RenderSection("scripts", required: false)
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Optional - Adds useful class to manipulate icon font display and social color style -->
     <link rel="stylesheet" href="~/Content/pe-icon-social/css/helper.css">
     <link rel="stylesheet" href="~/Content/pe-icon-social/css/social-style.css">
@@ -60,7 +60,7 @@
                                 <li>@Html.ActionLink("Проекти", "Projects", "Home")</li>
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Контактна інформація<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu" >
                                         <li>@Html.ActionLink("Керівництво", "Leaders", "Home")</li>
                                         <li>@Html.ActionLink("Партнеры", "Partners", "Home") </li>
                                         <li>@Html.ActionLink("Контактна інформація", "Contact", "Home")</li>

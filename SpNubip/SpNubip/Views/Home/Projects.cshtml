@@ -16,7 +16,7 @@
                 <a class="list-group-item" href="/Home/Projects">Усі категорії</a>
               @foreach (var category in Model.categories)
               {
-                <a  class="list-group-item" href="/Home/Projects/@category.Id_Category">@category.Title_Gategory</a>
+                <a  c class="list-group-item btn btn-primary" href="/Home/Projects/@category.Id_Category">@category.Title_Gategory</a>
               }
             </div>
         </div><!--/span-->
@@ -48,36 +48,4 @@
                         </div>
                     </a>
                 }
-                @*foreach (var project in categoryProjects)
-                {
-
-
-                    <div class="col-md-4" style="height:300px">
-                        <div class="thumbnail">
-                            <a href="/Home/PageWithProject/@project.Id_Project">
-                                <img class="img-responsive" src="@project.Img.Url_Img" alt="Lights" style="width:100%">
-                                <div class="caption">
-                                    <p>@project.Title </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                }*@
-            }
-        </div>
-
-
-
-                
-
-              </div><!--/row-->
-        </div><!--/span-->
-
-        
-  @*<div class ="col-sm-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading"><p>@project.Title </p></div>
-                <div class="panel-body"><img src="@project.Img.Url_Img" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">@project.Category.Title_Gategory</div>
-            </div>
-    </div>*@
+               

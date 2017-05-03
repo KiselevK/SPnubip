@@ -4,7 +4,7 @@
 }
 
 
-<div class="container">
+<div class="container" ng-app="myApp">
     
     <div class="page-banner-content">
        
@@ -15,39 +15,57 @@
     
 
     <script>
-      //  debugger 
-        function activate(e) {
-            debugger;
-            e.classList.toggle("active");
-        };
+        //var myApp = angular.module('myApp', ['ngRoute']);
+
+        //myApp.controller('WidgetsController', function ($scope) { });
+        //myApp.controller('MyCtrl', function ($scope, $location) {
+        //    $scope.isActive = function (route) {
+        //        var path = $location.path();
+        //        debugger;
+        //        return route === $location.path();
+        //    }
+        //});
+
+
+        //myApp.config(function ($routeProvider) {
+
+        //    $routeProvider
+        //        .when('/MainPage', { templateUrl: '#', controller: 'WidgetsController' })
+        //        .when('/lab', { templateUrl: 'Home/Mission', controller: 'WidgetsController' });
+        //});
+  
 
     </script>
 
     <div class="row  row-offcanvas row-offcanvas">
         <div class="pull-right col-xs-12 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-            <div class="list-group ">
-               
-                <a  @*href="@Url.Action("MainPage", "Home")"*@ onclick="activate(this)" class="list-group-item btn btn-primary active">Головна</a>
-                <a @*href="@Url.Action("Mission", "Home")" *@  onclick="activate(this)" class="list-group-item btn btn-primary">Місія</a>
-                <a @*href="@Url.Action("Potential", "Home")"*@  onclick="activate(this)" class="list-group-item btn btn-primary">Переваги участі</a>
-                <a @*href="@Url.Action("Partners", "Home")"  *@  onclick="activate(this)" class="list-group-item btn btn-primary">Партнери</a>
-                <a @*href="@Url.Action("Leaders", "Home")"  *@  onclick="activate(this)" class="list-group-item btn btn-primary">Керівництво</a>
-                <a @*href="@Url.Action("Contact", "Home")" *@  onclick="activate(this)" class="list-group-item btn btn-primary">Контакти</a>
+            <div class=""ng-controller="MainCtrl" ng-app=app>
+                <ul class="list-group"  bs-active-link >
+                    <li class="list-group-item" n><a href="@Url.Action("MainPage", "Home")" class="list-group-item btn btn-primary">Головна</a></li>
+                </ul>
+                
+                <a href="@Url.Action("Mission", "Home")"   ng-class="{active:isActive('/lab')}" class="list-group-item btn btn-primary">Місія</a>
+                <a href="@Url.Action("Potential", "Home")"  class="list-group-item btn btn-primary">Переваги участі</a>
+                <a href="@Url.Action("Partners", "Home")"  class="list-group-item btn btn-primary">Партнери</a>
+                <a href="@Url.Action("Leaders", "Home")"   class="list-group-item btn btn-primary">Керівництво</a>
+                <a href="@Url.Action("Contact", "Home")"   class="list-group-item btn btn-primary">Контакти</a>
 
             </div>
         </div><!--/span-->
-
-
+       
+        
         <div class="pull-left col-xs-12 col-sm-9 ">
-            <p class="pull-left visible-xs">
+            <p class="visible-xs">
                 <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
             </p>
-            <div  style="padding-top: 20px; padding-bottom: 20px">
+            <div class="row"  style="padding-top: 20px; padding-bottom: 20px">
+                <div class="carousel">
+                    @RenderBody()
+                </div>
                 
-                @RenderBody()
             </div>
         
-          @* <div class="pull-right">@Html.Partial("Slider")</div>*@ 
+           @*<div class="pull-right">@Html.Partial("Slider")</div>*@ 
         
 
 
@@ -66,7 +84,7 @@
                 <div class="col-6 col-sm-6 col-lg-6">
                     <h2>Cтартап школа</h2>
                     <p>24 лютого 2017 року в університеті за ініціативи Наукового парку НУБіП «Стале природокористування та якість життя» відбулась зустріч-дискусія «Стартап – це процес, який ідею перетворює на успішний бізнес».</p>
-                    <p><a class="btn btn-default" href="/Home/StartapSckool.cshtml" role="button">Більше інформації &raquo;</a></p>
+                    <p><a class="btn btn-default" href="/Home/StartapSckool" role="button">Більше інформації &raquo;</a></p>
                 </div><!--/span-->
               </div><!--/row-->
         </div><!--/span-->
