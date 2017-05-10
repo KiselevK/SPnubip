@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SpNubip.Models.News>
+﻿@*@model IEnumerable<SpNubip.Models.News>*@
 <!--Слайдер-->
 <script src="/Scripts/jquery-1.11.3.min.js" type="text/javascript"></script>
 <script src="/Scripts/jssor.slider-22.0.6.mini.js" type="text/javascript"></script>
@@ -16,14 +16,20 @@
     </div>
 
     <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:200px;height:300px;overflow:hidden;">
-        @foreach (SpNubip.Models.News b in Model)
-        {
+       
             <div>
-                <a href="/Home/PageWithNew/@b.ID_News">  <img data-u="image" src="@b.Img" /></a>
-                <div data-u="thumb">@b.Title</div>
+                <a href="/Home/PageWithPhoto">  <img data-u="image" src="~/img/PhotoReport/report1/1.jpg" /></a>
+                <div data-u="thumb">Круглий стіл з міжнародного співробітництва між зарубіжними науковими установами</div>
             </div>
         
-        }
+        <div>
+            <a href="/Home/PageWithPhoto">  <img data-u="image" src="~/img/PhotoReport/report2/1.jpg"/></a>
+            <div data-u="thumb">Засідання робочої групи лабораторії "Проектний офіс навчальних закладів та наукових установ"</div>
+        </div>
+        <div>
+            <a href="/Home/PageWithPhoto">  <img data-u="image" src="~/img/PhotoReport/report3/1.jpg" /></a>
+            <div data-u="thumb">Засідання Ради Національної науково-технологічної асоціації України</div>
+        </div>
              
         <a data-u="any" href="http://www.jssor.com" style="display:none">Banner Slider</a>
     </div>

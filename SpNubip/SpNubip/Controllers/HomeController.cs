@@ -17,7 +17,7 @@ namespace SpNubip.Controllers
             return View(db.News);
         }
 
-        
+
 
         public ActionResult Contact()
         {
@@ -59,7 +59,13 @@ namespace SpNubip.Controllers
 
 
 
-        [HttpGet]
+        public ActionResult PageWithPhoto()
+        {
+            return View();
+        }
+
+
+    [HttpGet]
         public ActionResult PageWithPartners(Guid id)
         {
             {

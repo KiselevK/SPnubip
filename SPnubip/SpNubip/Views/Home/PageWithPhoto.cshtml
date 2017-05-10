@@ -1,0 +1,60 @@
+﻿<div class="page-banner-content">
+    <ol class="breadcrumb">
+        <li><a href="@Url.Action("MainPage", "Home")">Головна</a></li>
+        <li class="active">Фото звіт</li>
+    </ol>
+</div>
+<div>
+    <div class="gallery">
+    <div class="container">
+        <h2 class="heading text-center">Фото-Звіт про життя наукового парку</h2>
+        <br/>
+        <h3>Круглий стіл з міжнародного співробітництва між зарубіжними науковими установами </h3>
+        <div class="gallery-bottom">
+            @for (int i=1; i<=2; i++)
+            {
+                <div class="col-md-3 gallery-grid">
+                    <a class="example-image-link" href="~/img/PhotoReport/report1/@(i).jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="~/img/Photoreport/report1/@(i).jpg" alt="" /></a>
+                </div>
+            }
+            <div class="clearfix"></div>
+        </div>
+        <br />
+        <h3>Засідання робочої групи лабораторії "Проектний офіс навчальних закладів та наукових установ"</h3>
+        <div class="gallery-bottom">
+            @for (int i = 1; i <= 4; i++)
+            {
+                <div class="col-md-3 gallery-grid">
+                    <a class="example-image-link" href="~/img/PhotoReport/report2/@(i).jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="~/img/Photoreport/report2/@(i).jpg" alt="" /></a>
+                </div>
+            }
+            <div class="clearfix"></div>
+        </div>
+        <br />
+        <h3>Засідання Ради Національної науково-технологічної асоціації України</h3>
+        <div class="gallery-bottom">
+            @for (int i = 1; i <= 2; i++)
+            {
+                <div class="col-md-3 gallery-grid">
+                    <a class="example-image-link" href="~/img/PhotoReport/report3/@(i).jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="~/img/Photoreport/report3/@(i).jpg" alt="" /></a>
+                </div>
+            }
+            <div class="clearfix"></div>
+        </div>
+        <br />
+        <h3>Науковий парк подарував університету сучасний двигун від комбайна КЛААС TUCANO</h3>
+        <div class="gallery-bottom">
+            @for (int i = 1; i <= 3; i++)
+            {
+                <div class="col-md-3 gallery-grid">
+                    <a class="example-image-link" href="~/img/PhotoReport/report4/@(i).jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="~/img/Photoreport/report4/@(i).jpg" alt="" /></a>
+                </div>
+            }
+            <div class="clearfix"></div>
+        </div>
+        <br />
+      
+    </div>
+</div>
+
+    </div>

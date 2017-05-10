@@ -1148,6 +1148,7 @@
     <Content Include="Views\Home\Advantages.cshtml" />
     <Content Include="Views\Home\_SliderPartial.cshtml" />
     <Content Include="Scripts\version.json" />
+    <Content Include="Views\Home\PageWithPhoto.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
@@ -1159,7 +1160,13 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="img\Photoreport\report1\" />
+    <Folder Include="img\Photoreport\report2\" />
+    <Folder Include="img\Photoreport\report3\" />
+    <Folder Include="img\Photoreport\report4\" />
+    <Folder Include="img\Photoreport\report5\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

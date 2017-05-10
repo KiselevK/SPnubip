@@ -58,7 +58,7 @@
                                 <li>@Html.ActionLink("Головна", "MainPage", "Home")</li>
                                 <li>@Html.ActionLink("Новини", "News", "Home")</li>
                                 <li>@Html.ActionLink("Проекти", "Projects", "Home")</li>
-                                <li class="dropdown">
+                                @*<li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Контактна інформація<span class="caret"></span></a>
                                     <ul class="dropdown-menu" >
                                         <li>@Html.ActionLink("Керівництво", "Leaders", "Home")</li>
@@ -66,8 +66,9 @@
                                         <li>@Html.ActionLink("Контактна інформація", "Contact", "Home")</li>
 
                                     </ul>
-                                </li>
+                                </li>*@
                                 <li>@Html.ActionLink("Стартап школа", "StartupSckool", "Home")</li>
+                                <li class="visible-xs-block">@Html.ActionLink("Фото-звіт", "PageWithPhoto", "Home")</li>
                             </ul>
                         </div>
                     </div>
@@ -79,7 +80,7 @@
         <!--Center-->
 
         <div class="" >
-            <div class="container body-content" style="min-height:700px; padding-top: 20px; padding-bottom: 20px ">
+            <div class="container body-content" style="min-height:700px;  ">
                 @RenderBody()
 
             </div>
@@ -112,17 +113,17 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-5">
                         <div class="widget">
-                            <h5 class="widgetheading">Latest posts</h5>
+                            <h5 class="widgetheading">Новини</h5>
                             <ul class="link-list">
-                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                                <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-                                <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+                                <li><a href="Home/PageWithNew/c8df73bb-4d14-4888-bc32-5d41b6327e71">Представники НУБіП взяли участь у Форумі учасників інноваційної екосистеми «Sikorsky Challenge»</a></li>
+                                <li><a href="Home/PageWithNew/682428c7-49c3-4c71-bf78-1c1eee9a445b">Лекція-дискусія ”Стартапи, як механізм комерціалізації наукових розробок. Світовий досвід і практика «від ідеї - до бізнесу»”</a></li>
+                                <li><a href="Home/PageWithNew/c8df73bb-4d14-4888-bc32-5d41b6327e71">Представники НУБіП взяли участь у Форумі учасників інноваційної екосистеми «Sikorsky Challenge»</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-3">
                         <h5 class="widgetheading">Ми у соціальних мережах</h5>
                         <ul class="btn-group-vertical pe-social">
                             <li><a href="#0"><i class="pe-so-vk pe-bg pe-hover pe-lg"></i></a></li>

@@ -3,7 +3,7 @@
 
 <div class="page-banner-content">
     <ol class="breadcrumb">
-        <li><a href="@Url.Action("Slider", "Home")">Головна</a></li>
+        <li><a href="@Url.Action("MainPage", "Home")">Головна</a></li>
         <li><a href="@Url.Action("Projects", "Home")">Проeкти</a></li>
         <li class="active">@Model.Title</li>
     </ol>
@@ -11,7 +11,7 @@
 
 <div class="row  row-offcanvas row-offcanvas">
     <div class="col-xs-12 col-sm-4" >
-        <span class="img-responsive img-thumbnail"><img src="@Model.Img.Url_Img" /></span>
+        <img src="@Model.Img.Url_Img" class="img-responsive img-thumbnail"/>
         <p><strong>Категорія: </strong>@Model.Category.Title_Gategory</p>
         <p><strong>Розробник (автори): </strong>@Model.Creator</p>
         <p>@Model.Pulpit</p>

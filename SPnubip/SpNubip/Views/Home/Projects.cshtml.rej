@@ -1,0 +1,10 @@
+diff a/SpNubip/SpNubip/Views/Home/Projects.cshtml b/SpNubip/SpNubip/Views/Home/Projects.cshtml	(rejected hunks)
+@@ -61,7 +61,7 @@
+                             </a>
+                         </div>
+                     </div>
+-                }
++                }*@
+             }
+         </div>
+ 
