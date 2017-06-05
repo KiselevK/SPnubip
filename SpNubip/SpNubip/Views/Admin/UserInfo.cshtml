@@ -1,0 +1,27 @@
+﻿@using SpNubip.Models
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>UserInfo</title>
+</head>
+<body>
+<div>
+    <h1>User Info</h1>
+    <table>
+       
+    </table>
+  @foreach (AspNetUser b in Model)
+  {
+      <tr>
+          <td>@b.Id</td>
+          <td>@b.Email</td>
+          <td>@b.PhoneNumber</td>
+      </tr>
+  }
+</div>
+</body>
+</html>

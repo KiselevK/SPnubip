@@ -40,6 +40,11 @@ namespace SpNubip.Controllers
             }
         }
 
+        public ActionResult DisplayEmail()
+        {
+            return View();
+        }
+
         public ApplicationUserManager UserManager
         {
             get
@@ -68,27 +73,43 @@ namespace SpNubip.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return View(model);
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var result = await UserManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
+                {
+                    // генерируем токен для подтверждения регистрации
+                    var code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                    // создаем ссылку для подтверждения
+                    var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code },
+                               protocol: Request.Url.Scheme);
+                    // отправка письма
+                    await UserManager.SendEmailAsync(user.Id, "Підтверження електроної адреси",
+                               "Для завершення реєстрації перейдіть по посиланню:: <a href=\""
+                                                               + callbackUrl + "\">Завершити реєстрацію</a>");
+                    return View("DisplayEmail");
+                }
+                AddErrors(result);
             }
+            return View(model);
 
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
-            switch (result)
-            {
-                case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
-                case SignInStatus.LockedOut:
-                    return View("Lockout");
-                case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-                case SignInStatus.Failure:
-                default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
-                    return View(model);
-            }
+            //var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+            //switch (result)
+            //{
+            //    case SignInStatus.Success:
+            //        return RedirectToLocal(returnUrl);
+            //    case SignInStatus.LockedOut:
+            //        return View("Lockout");
+            //    case SignInStatus.RequiresVerification:
+            //        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+            //    case SignInStatus.Failure:
+            //    default:
+            //        ModelState.AddModelError("", "Invalid login attempt.");
+            //        return View(model);
+            //}
         }
 
         //
@@ -139,6 +160,7 @@ namespace SpNubip.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+
             return View();
         }
 
@@ -151,19 +173,19 @@ namespace SpNubip.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, PhoneNumber = model.Number};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+
                     // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
-                    // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                    string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                    var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                    await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("Index", "Home");
+                    return View("DisplayEmail");
                 }
                 AddErrors(result);
             }
@@ -422,6 +444,8 @@ namespace SpNubip.Controllers
 
             base.Dispose(disposing);
         }
+
+        
 
         #region Helpers
         // Used for XSRF protection when adding external logins

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Net.Mail;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
@@ -18,8 +19,26 @@ namespace SpNubip
     {
         public Task SendAsync(IdentityMessage message)
         {
-            // Plug in your email service here to send an email.
-            return Task.FromResult(0);
+            //// Plug in your email service here to send an email.
+            //return Task.FromResult(0);
+            var from = "supspnubip@gmail.com";
+            var pass = "890dfgcf";
+
+            // адрес и порт smtp-сервера, с которого мы и будем отправлять письмо
+            SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+
+            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            client.UseDefaultCredentials = false;
+            client.Credentials = new System.Net.NetworkCredential(from, pass);
+            client.EnableSsl = true;
+
+            // создаем письмо: message.Destination - адрес получателя
+            var mail = new MailMessage(from, message.Destination);
+            mail.Subject = message.Subject;
+            mail.Body = message.Body;
+            mail.IsBodyHtml = true;
+
+            return client.SendMailAsync(mail);
         }
     }
 
@@ -54,10 +73,11 @@ namespace SpNubip
             manager.PasswordValidator = new PasswordValidator
             {
                 RequiredLength = 6,
-                RequireNonLetterOrDigit = true,
-                RequireDigit = true,
-                RequireLowercase = true,
-                RequireUppercase = true,
+                
+                //RequireNonLetterOrDigit = false,
+                //RequireDigit = true,
+                //RequireLowercase = false,
+                //RequireUppercase = false,
             };
 
             // Configure user lockout defaults

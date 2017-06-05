@@ -8,7 +8,10 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="~/Content/pe-icon-social/css/pe-icon-social.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
+    @RenderSection("scripts", required: false)
     <!-- Optional - Adds useful class to manipulate icon font display and social color style -->
     <link rel="stylesheet" href="~/Content/pe-icon-social/css/helper.css">
     <link rel="stylesheet" href="~/Content/pe-icon-social/css/social-style.css">
@@ -20,7 +23,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="pull-right">
+                        <div class="pull-left">
                             <ul class="pe-social">
                                 <li><a href="#0"><i class="pe-so-vk pe-bg pe-hover pe-lg"></i></a></li>
                                 <li><a href="#0"><i class="pe-so-twitter pe-bg pe-hover pe-lg"></i></a></li>
@@ -28,7 +31,7 @@
                                 <li><a href="#0"><i class="pe-so-youtube-1 pe-bg pe-hover pe-lg"></i></a></li>
                             </ul>
                         </div>
-
+                        <div class="pull-right">@Html.Partial("_LoginPartial")</div>
                         
                     </div>
                 </div>
@@ -45,26 +48,27 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a href="@Url.Action("Slider", "Home", new {area = "", @class = "navbar-brand"})">
+                            <a href="@Url.Action("MainPage", "Home", new {area = "", @class = "navbar-brand"})">
                                 <img style="height:70px; width:200px" src="~/img/1R4BlF3YvYcI.png" />
                             </a>
 
                         </div>
-                        <div class="navbar-collapse collapse ">
-                            <ul class="nav navbar-nav pagination">
-                                <li>@Html.ActionLink("Головна", "Slider", "Home")</li>
+                        <div class="navbar-collapse collapse " >
+                            <ul class="nav navbar-nav ">
+                                <li>@Html.ActionLink("Головна", "MainPage", "Home")</li>
                                 <li>@Html.ActionLink("Новини", "News", "Home")</li>
                                 <li>@Html.ActionLink("Проекти", "Projects", "Home")</li>
-                                <li class="dropdown">
+                                @*<li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Контактна інформація<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu" >
                                         <li>@Html.ActionLink("Керівництво", "Leaders", "Home")</li>
                                         <li>@Html.ActionLink("Партнеры", "Partners", "Home") </li>
                                         <li>@Html.ActionLink("Контактна інформація", "Contact", "Home")</li>
 
                                     </ul>
-                                </li>
+                                </li>*@
                                 <li>@Html.ActionLink("Стартап школа", "StartupSckool", "Home")</li>
+                                <li class="visible-xs-block">@Html.ActionLink("Фото-звіт", "PageWithPhoto", "Home")</li>
                             </ul>
                         </div>
                     </div>
@@ -75,8 +79,8 @@
       
         <!--Center-->
 
-        <div class="" style="background-color: #fcf7e3">
-            <div class="container body-content" style="background-color: #fcf7e3;min-height:700px; padding-top: 20px; padding-bottom: 20px ">
+        <div class="" >
+            <div class="container body-content" style="min-height:700px;  ">
                 @RenderBody()
 
             </div>
@@ -109,17 +113,17 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-5">
                         <div class="widget">
-                            <h5 class="widgetheading">Latest posts</h5>
+                            <h5 class="widgetheading">Новини</h5>
                             <ul class="link-list">
-                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                                <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-                                <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+                                <li><a href="Home/PageWithNew/c8df73bb-4d14-4888-bc32-5d41b6327e71">Представники НУБіП взяли участь у Форумі учасників інноваційної екосистеми «Sikorsky Challenge»</a></li>
+                                <li><a href="Home/PageWithNew/682428c7-49c3-4c71-bf78-1c1eee9a445b">Лекція-дискусія ”Стартапи, як механізм комерціалізації наукових розробок. Світовий досвід і практика «від ідеї - до бізнесу»”</a></li>
+                                <li><a href="Home/PageWithNew/c8df73bb-4d14-4888-bc32-5d41b6327e71">Представники НУБіП взяли участь у Форумі учасників інноваційної екосистеми «Sikorsky Challenge»</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-3">
                         <h5 class="widgetheading">Ми у соціальних мережах</h5>
                         <ul class="btn-group-vertical pe-social">
                             <li><a href="#0"><i class="pe-so-vk pe-bg pe-hover pe-lg"></i></a></li>
@@ -137,8 +141,5 @@
     <!-- footer-section-ends-here -->
 
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -1,6 +1,6 @@
 ﻿@model SpNubip.Models.VerifyPhoneNumberViewModel
 @{
-    ViewBag.Title = "Verify Phone Number";
+    ViewBag.Title = "Перевірте номер телефону";
 }
 
 <h2>@ViewBag.Title.</h2>
@@ -9,7 +9,7 @@
 {
     @Html.AntiForgeryToken()
     @Html.Hidden("phoneNumber", @Model.PhoneNumber)
-    <h4>Enter verification code</h4>
+    <h4>Введіть код підтвердження</h4>
     <h5>@ViewBag.Status</h5>
     <hr />
     @Html.ValidationSummary("", new { @class = "text-danger" })

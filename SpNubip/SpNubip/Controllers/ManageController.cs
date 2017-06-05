@@ -99,6 +99,10 @@ namespace SpNubip.Controllers
             return RedirectToAction("ManageLogins", new { Message = message });
         }
 
+        public ActionResult AddNewProject()
+        {
+            return View();
+        }
         //
         // GET: /Manage/AddPhoneNumber
         public ActionResult AddPhoneNumber()

@@ -97,6 +97,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -207,11 +208,16 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AspNetRole.cs" />
+    <Compile Include="Models\AspNetUser.cs" />
+    <Compile Include="Models\AspNetUserClaim.cs" />
+    <Compile Include="Models\AspNetUserLogin.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\DataForIndexLayout.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Img.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ModelUsers.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\Partner.cs" />
     <Compile Include="Models\CategoryProjects.cs" />
@@ -1149,6 +1155,9 @@
     <Content Include="Views\Home\_SliderPartial.cshtml" />
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Home\PageWithPhoto.cshtml" />
+    <Content Include="Views\Admin\UserInfo.cshtml" />
+    <Content Include="Views\Account\DisplayEmail.cshtml" />
+    <Content Include="Views\Manage\AddNewProject.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

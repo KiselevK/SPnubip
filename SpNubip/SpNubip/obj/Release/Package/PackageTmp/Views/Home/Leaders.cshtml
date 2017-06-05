@@ -1,10 +1,27 @@
-﻿<div class="page-banner-content">
-    <ol class="breadcrumb">
-        <li><a href="@Url.Action("Slider", "Home")">Головна</a></li>
-        <li class="active">Керівництво</li>
-    </ol>
-</div>
+﻿
+@{
+    Layout = "~/Views/Home/_IndexLayout.cshtml";
+}
+
+
+
 
 <h2><b>Керівництво</b></h2>
-<p>Президент Наукового парку «Стале природокористування та якість життя» Ніколаєнко Станіслав Миколайович, доктор педагогічних наук, професор, ректор НУБіП України</p>
-<p>Директор Наукового парку «Стале природокористування та якість життя» Теслюк Віктор Васильович,  доктор сільськогосподарських наук, професор </p>
+<div>
+    <div class="row" >
+        <div class="col-xs-12 col-sm-4">
+            <span><img style="min-height: 150px; min-height: 200px" class="img-responsive img-thumbnail" src="~/img/1_57.jpg" /></span> 
+        </div>
+        <div class="col-xs-12 col-sm-8"> <p>Президент Наукового парку Ніколаєнко Станіслав Миколайович, доктор педагогічних 	наук, професор, ректор НУБіП України</p></div>
+    </div>
+    
+</div>
+<div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <span ><img  style="height: 150px; height: 200px" class="img-responsive img-thumbnail"  src="~/img/TeclyukVV.png" /></span>
+        </div>
+        <div class="col-xs-12 col-sm-8"><p>Директор Наукового парку Теслюк Віктор Васильович,  доктор сільськогосподарських наук, професор</p> </div>
+    </div>
+
+</div>

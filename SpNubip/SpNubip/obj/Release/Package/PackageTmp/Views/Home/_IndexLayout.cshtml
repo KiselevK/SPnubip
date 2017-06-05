@@ -1,40 +1,76 @@
-﻿@{
+﻿
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
-<div class="container">
+<div class="container" ng-app="myApp">
     
     <div class="page-banner-content">
        
         <ol class="breadcrumb">
-              <li class="active">Головна</li>
+            <li class="active">Головна</li>
         </ol>
     </div>
     
 
+    <script>
+        var myApp = angular.module('myApp', ['ngRoute']);
+
+        myApp.controller('WidgetsController', function ($scope) { });
+        myApp.controller('MyCtrl', function ($scope, $location) {
+            $scope.isActive = function (route) {
+                var path = $location.path();
+                debugger;
+                return route === $location.path();
+            }
+        });
+
+
+        myApp.config(function ($routeProvider) {
+
+            $routeProvider
+                .when('/MainPage', { templateUrl: '/MainPage', controller: 'WidgetsController' })
+                .when('/mission', { templateUrl: 'Home/Mission', controller: 'WidgetsController' });
+
+        });
+  
+
+    </script>
+
     <div class="row  row-offcanvas row-offcanvas">
         <div class="pull-right col-xs-12 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-            <div class="list-group">
-                <a href="@Url.Action("Slider", "Home")"  class="list-group-item">Головна</a>
-                <a href="@Url.Action("Mission", "Home")" class="list-group-item">Місія</a>
-                <a href="@Url.Action("Strategy_plan", "Home")" class="list-group-item">Стратегічний план</a>
-                <a href="@Url.Action("Presentation", "Home")" class="list-group-item">Презентація</a>
-                <a href="@Url.Action("Diagram1", "Home")" class="list-group-item">Схема взаємодії учасників</a>
-                <a href="@Url.Action("Diagram2", "Home")" class="list-group-item">Організаційна структура</a>
-                <a href="@Url.Action("Potential", "Home")" class="list-group-item">Потенціал</a>
+            <div class="myClass" ng-controller="MyCtrl" >
+                <a href="@Url.Action("MainPage", "Home")"  g-class="{active:isActive('/MainPage')}" class="list-group-item btn btn-primary">Головна</a>
+                <a href="@Url.Action("Mission", "Home")" ng-class="{active:isActive('/lab')}" class="list-group-item btn btn-primary">Місія</a> 
+                
+               
+                <a href="@Url.Action("Potential", "Home")"  class="list-group-item btn btn-primary">Переваги участі</a>
+                <a href="@Url.Action("Partners", "Home")"  class="list-group-item btn btn-primary">Партнери</a>
+                <a href="@Url.Action("Leaders", "Home")"   class="list-group-item btn btn-primary">Керівництво</a>
+                <a href="@Url.Action("Contact", "Home")"   class="list-group-item btn btn-primary">Контакти</a>
+
+                <div style="padding-top: 30px; padding-bottom: 20px" class="hidden-xs">@Html.Partial("Slider")</div>
             </div>
+      
         </div><!--/span-->
-
-
+       
+        
         <div class="pull-left col-xs-12 col-sm-9 ">
-            <p class="pull-left visible-xs">
+            <p class="visible-xs">
                 <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
             </p>
-            <div class="jumbotron">
+            <div class="row"  style="padding-top: 20px; padding-bottom: 20px">
+                <div class="carousel">
+                    @RenderBody()
+                </div>
                 
-                @RenderBody()
             </div>
+        
+           
+        
+
+
             <div class="row">
                 <div class="col-6 col-sm-6 col-lg-6">
                     <h2>Sharing of ideas</h2>
@@ -50,11 +86,12 @@
                 <div class="col-6 col-sm-6 col-lg-6">
                     <h2>Cтартап школа</h2>
                     <p>24 лютого 2017 року в університеті за ініціативи Наукового парку НУБіП «Стале природокористування та якість життя» відбулась зустріч-дискусія «Стартап – це процес, який ідею перетворює на успішний бізнес».</p>
-                    <p><a class="btn btn-default" href="/Home/StartapSckool.cshtml" role="button">Більше інформації &raquo;</a></p>
+                    <p><a class="btn btn-default" href="/Home/StartupSckool/" role="button">Більше інформації &raquo;</a></p>
                 </div><!--/span-->
               </div><!--/row-->
         </div><!--/span-->
-
-        
+        <div class="row">
+            
+        </div>
     </div>
 </div>
