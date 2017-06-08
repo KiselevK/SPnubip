@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using SpNubip.Models;
+using System.Net.Mail;
 
 namespace SpNubip.Controllers
 {
@@ -73,43 +74,43 @@ namespace SpNubip.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
-            if (ModelState.IsValid)
-            {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-                var result = await UserManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
-                {
-                    // генерируем токен для подтверждения регистрации
-                    var code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    // создаем ссылку для подтверждения
-                    var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code },
-                               protocol: Request.Url.Scheme);
-                    // отправка письма
-                    await UserManager.SendEmailAsync(user.Id, "Підтверження електроної адреси",
-                               "Для завершення реєстрації перейдіть по посиланню:: <a href=\""
-                                                               + callbackUrl + "\">Завершити реєстрацію</a>");
-                    return View("DisplayEmail");
-                }
-                AddErrors(result);
-            }
-            return View(model);
-
-            // This doesn't count login failures towards account lockout
-            // To enable password failures to trigger account lockout, change to shouldLockout: true
-            //var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
-            //switch (result)
+            //if (ModelState.IsValid)
             //{
-            //    case SignInStatus.Success:
-            //        return RedirectToLocal(returnUrl);
-            //    case SignInStatus.LockedOut:
-            //        return View("Lockout");
-            //    case SignInStatus.RequiresVerification:
-            //        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-            //    case SignInStatus.Failure:
-            //    default:
-            //        ModelState.AddModelError("", "Invalid login attempt.");
-            //        return View(model);
+            //    var user = await UserManager.FindAsync(model.UserName, model.Password);
+            //    if (user != null)
+            //    {
+            //        if (user.ConfirmedEmail == true)
+            //        {
+            //            await SignInAsync(user, model.RememberMe);
+            //            return RedirectToLocal(returnUrl);
+            //        }
+            //        else
+            //        {
+            //            ModelState.AddModelError("", "Не подтвержден email.");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        ModelState.AddModelError("", "Неверный логин или пароль");
+            //    }
             //}
+            //return View(model);
+            //This doesn't count login failures towards account lockout
+            // To enable password failures to trigger account lockout, change to shouldLockout: true
+            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+            switch (result)
+            {
+                case SignInStatus.Success:
+                    return RedirectToLocal(returnUrl);
+                case SignInStatus.LockedOut:
+                    return View("Lockout");
+                case SignInStatus.RequiresVerification:
+                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                case SignInStatus.Failure:
+                default:
+                    ModelState.AddModelError("", "Invalid login attempt.");
+                    return View(model);
+            }
         }
 
         //

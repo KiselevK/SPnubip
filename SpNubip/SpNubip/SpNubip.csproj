@@ -213,7 +213,6 @@
     <Compile Include="Models\AspNetUserClaim.cs" />
     <Compile Include="Models\AspNetUserLogin.cs" />
     <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\DataForIndexLayout.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Img.cs" />
     <Compile Include="Models\ManageViewModels.cs" />

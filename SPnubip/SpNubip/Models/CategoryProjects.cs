@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace SpNubip.Models
 {
     using System;
@@ -12,3 +14,8 @@ namespace SpNubip.Models
         public IEnumerable<Category> categories;
     }
 }
+
+public class UsersProjects
+{
+   
+} 

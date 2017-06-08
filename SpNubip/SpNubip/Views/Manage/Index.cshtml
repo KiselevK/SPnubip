@@ -1,4 +1,5 @@
-﻿@model SpNubip.Models.IndexViewModel
+﻿@using System.ComponentModel.DataAnnotations
+@model SpNubip.Models.IndexViewModel
 @{
     ViewBag.Title = "Профіль";
 }
@@ -8,9 +9,17 @@
 <p class="text-success">@ViewBag.StatusMessage</p>
 <div>
     <hr/>
+  
+ @if (Model.ConfirmEmail)
+ {
     <h3>Ваші проекти</h3>
-    <p>Ви ще не подали проекту. <a href="/Manage/AddNewProject">Натисніть, щоб подати проект.</a> </p>
-
+     <p>Ви ще не подали проекту. <a href="/Manage/AddNewProject">Натисніть, щоб подати проект.</a>
+     </p>
+ }
+ else
+ {
+     <h3>Ви не підтвердили електрону пошту</h3>
+ }
     <hr/>
     <h4>Змінити налаштування профілю</h4>
     <dl class="dl-horizontal">

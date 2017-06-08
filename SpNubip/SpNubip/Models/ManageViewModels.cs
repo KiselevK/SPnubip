@@ -12,6 +12,8 @@ namespace SpNubip.Models
         public string PhoneNumber { get; set; }
         public bool TwoFactor { get; set; }
         public bool BrowserRemembered { get; set; }
+        public bool ConfirmEmail { get; set; }
+        
     }
 
     public class ManageLoginsViewModel
